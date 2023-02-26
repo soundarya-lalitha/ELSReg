@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="HR">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+	<test name="HRTestSuite" preserve-order="true">
+		<!--  packages-->
+		 <!--  /packages-->
+		<classes> 
+				<class name="regHRscripts.UploadCensusPageVerificationNew"> </class>				
+				<class name="regHRscripts.NoMapGarnishmentNew"> </class>							
+				<class name="regHRscripts.ChngColNamesNoMapNew"> </class>	
+				<class name="regHRscripts.SpecialCharInSalaryNew"> </class>
+				<class name="regHRscripts.FirstNameDOBNew"> </class>	
+				<class name="regHRscripts.MapDuplicateColumnsNew"> </class>	
+				<class name="regHRscripts.MapIncorrectColumnsNew"> </class>		
+				
+				<class name="regHRscripts.DollarValueInSalaryew"> </class>								
+			
+				
+				
+				
+		</classes>		
+	</test>
+</suite>
+
+
+
+                                                     
+

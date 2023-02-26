@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="67.025">
+  <properties />
+  
+  
+            <testcase name="verifyEmployment" time="13.941" classname="regloanscripts.Verify_Employment" />
+                <testcase name="verifyEmployment" time="14.373" classname="regloanscripts.Verify_Employment" />
+                <testcase name="verifyEmployment" time="12.535" classname="regloanscripts.Verify_Employment" />
+                <testcase name="verifyEmployment" time="12.056" classname="regloanscripts.Verify_Employment" />
+                <testcase name="verifyEmployment" time="14.120" classname="regloanscripts.Verify_Employment" />
+      
+</testsuite>

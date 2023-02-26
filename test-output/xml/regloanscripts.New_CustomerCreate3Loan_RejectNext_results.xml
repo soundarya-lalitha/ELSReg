@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegLoansCycle2"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="294.806">
+  <properties />
+  
+  
+            <testcase name="customer3Loan_Reject_Other" time="294.806" classname="regloanscripts.New_CustomerCreate3Loan_RejectNext" />
+      
+</testsuite>

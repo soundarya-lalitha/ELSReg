@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ProductionTest]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="ProductionNavigations(failed)">
+    <classes>
+      <class name="regloanscripts.AdminNavigations">
+        <methods>
+          <include name="NavigationCheck" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- regloanscripts.AdminNavigations -->
+    </classes>
+  </test> <!-- ProductionNavigations(failed) -->
+</suite> <!-- Failed suite [ProductionTest] -->

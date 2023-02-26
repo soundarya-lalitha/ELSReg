@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">RegressionTest</th></tr>
+<tr><td><a href="#t0">Regression</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">12,575</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">regLoansNewUI.AdminNavigationsTest</td><td><a href="#m0">NavigationCheck</a></td><td rowspan="7">1675321974557</td><td rowspan="7">2457</td></tr><tr class="failedeven"><td><a href="#m1">NavigationCheck</a></td></tr><tr class="failedeven"><td><a href="#m2">NavigationCheck</a></td></tr><tr class="failedeven"><td><a href="#m3">NavigationCheck</a></td></tr><tr class="failedeven"><td><a href="#m4">NavigationCheck</a></td></tr><tr class="failedeven"><td><a href="#m5">NavigationCheck</a></td></tr><tr class="failedeven"><td><a href="#m6">NavigationCheck</a></td></tr></tbody>
+</table>
+<h2>Regression</h2><h3 id="m0">regLoansNewUI.AdminNavigationsTest#NavigationCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>hr.admin@gmail.com</td><td>Paswrd@123#</td><td>User Accounts-Create Users#User Accounts-Edit Existing Users#HR Management-Upload Census File#HR Management-Upload PDT File#HR Management-Download PDI File#HR Management-Report Termination#HR Management-Rollback Termination#HR Management-Search Documents#Reports-Pay Deduction Report#HR Faqs</td><td>admin</td><td>chrome</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">regLoansNewUI.AdminNavigationsTest#NavigationCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>bank.admin@gmail.com</td><td>Paswrd@123#</td><td>User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Employee Service#Employees-Pay off Loan#Employees-Search Documents#Employees-Cancel Loans#Employees-ACH Report#Employees-Customer Service#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Underwriting Data#Reports-Loan Details Report#Reports-Pay Calendar Report#Reports-Pay Deduction Report#Reports-Pay Calendar Report#Reports-Florida Stamp Tax Report#Reports-Employer Info Report#Employers-Upload Payroll Calendar#Employers-Setup New Employer#Employers-Edit Employer#Employers-Employer Dashboard#Employers-Daily Files Verification</td><td>admin</td><td>chrome</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">regLoansNewUI.AdminNavigationsTest#NavigationCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>cip.admin@gmail.com</td><td>Paswrd@123#</td><td>User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Pay off Loan#Employees-Employee Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Florida Stamp Tax Report</td><td>admin</td><td>chrome</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">regLoansNewUI.AdminNavigationsTest#NavigationCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>cipadmin.sunrise@gmail.com</td><td>Paswrd@123#</td><td>User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Pay off Loan#Employees-Employee Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Florida Stamp Tax Report</td><td>admin</td><td>chrome</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">regLoansNewUI.AdminNavigationsTest#NavigationCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>cip.user@gmail.com</td><td>Paswrd@123#</td><td>CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Pay Calendar Report</td><td>admin</td><td>chrome</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">regLoansNewUI.AdminNavigationsTest#NavigationCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>payroll.master@elsmaster.com</td><td>Paswrd@123#</td><td>User Accounts-Create Users#User Accounts-Edit Existing Users#HR Management-Upload Census File#HR Management-Upload PDT File#HR Management-Download PDI File#HR Management-Report Termination#HR Management-Rollback Termination#HR Management-Search Documents#Reports-Pay Deduction Report#HR Faqs</td><td>admin</td><td>chrome</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">regLoansNewUI.AdminNavigationsTest#NavigationCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>elstest1060@gmail.com</td><td>Paswrd@123#</td><td>User Accounts-Create Users#User Accounts-Edit Existing Users#Employees-Employee Service#Employees-Clear CIP Status#Employees-Pay off Loan#Employees-Customer Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-Revenue Report#Reports-Pay Calendar Report#Reports-Pay Deduction Report#Reports-Daily Loans Details#Reports-Search Documents#Reports-Blackout Schedule#Reports-School Calendar#Reports-Florida Stamp Tax Report#Reports-Employer Info Report#Reports-ACH Report#Employers-Setup New Employer#Employers-Edit Employer#Employers-Employer Dashboard#Employers-Daily Files Verification#Employers-Upload Payroll Calendar#Employers-Upload Census File#Employers-Upload PDT File#Employers-Download PDI File#Admin-App Log#Admin-Census Search#Admin-Report Termination#Admin-Rollback Termination#Admin-Upload LoanBalance#Admin-Cancel Loans</td><td>admin</td><td>chrome</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

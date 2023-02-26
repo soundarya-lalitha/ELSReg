@@ -1,0 +1,27 @@
+	<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="RegLoanCustomerRejects">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+	<test name="RegLoanCustRejec" preserve-order="true">
+		<!--  packages-->
+		 <!--  /packages-->
+		<classes>
+						
+		<class name="regLoansNewUI.NoCredit_CustTerm_Inac_EmpDeacti"> </class>
+		<class name="regLoansNewUI.NoCredit_Red_Blackout"> </class>
+		<class name="regLoansNewUI.NoCreditGarnishVerifyLoanRej"> </class>
+		<class name="regLoansNewUI.NoCredit_Verify_Loan_Reject"> </class>	
+		
+				
+		</classes>
+		
+	</test>
+</suite>
+
+
+
+
+

@@ -1,0 +1,25 @@
+	<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="ProductionTest">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+	<test name="ProductionNavigations" preserve-order="true">
+		<!--  packages-->
+		 <!--  /packages-->
+		 
+		 
+		<classes>  
+				
+				<class name="regloanscripts.AdminNavigations"> </class> 
+				
+				
+				 
+		</classes>
+		
+	</test>
+</suite>
+
+
+

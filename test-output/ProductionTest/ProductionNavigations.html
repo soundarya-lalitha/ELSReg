@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>TestNG:  ProductionNavigations</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ProductionNavigations</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 05 09:14:36 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1440 seconds (1440571 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='regloanscripts.AdminNavigations.NavigationCheck()'><b>NavigationCheck</b><br>Test class: regloanscripts.AdminNavigations<br>Parameters: soundarya.lalitha@emploan.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#Employees-Employee Service#Employees-Clear CIP Status#Employees-Pay off Loan#Employees-Customer Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-Revenue Report#Reports-Pay Calendar Report#Reports-Pay Deduction Report#Reports-Daily Loans Details#Reports-Search Documents#Reports-Blackout Schedule#Reports-School Calendar#Reports-Florida Stamp Tax Report#Reports-Employer Info Report#Reports-ACH Report#Employers-Setup New Employer#Employers-Edit Employer#Employers-Employer Dashboard#Employers-Daily Files Verification#Employers-Upload Payroll Calendar#Employers-Upload Census File#Employers-Upload PDT File#Employers-Download PDI File#Admin-App Log#Admin-Census Search#Admin-Report Termination#Admin-Rollback Termination#Admin-Upload LoanBalance#Admin-Cancel Loans, admin, chrome<br/>
+<a href="#Output-1255024717" onClick='toggleBox("Output-1255024717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1255024717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1255024717">
+Create Users Page navigation successful.<br/>
+Edit Existing Users Page navigation successful.<br/>
+Employee Service Page navigation successful.<br/>
+Clear CIP Page navigation successful.<br/>
+Pay off Loan Page navigation successful.<br/>
+Customer Service Page navigation successful.<br/>
+Underwriting Data Page navigation successful.<br/>
+Loan Details Report Page navigation is not successful.<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Reports&quot;}
+  (Session info: chrome=106.0.5249.91)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.29.158&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\sound\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ee224e28289d39075233f3f201aa11a
+*** Element info: {Using=link text, value=Reports}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageobjects.NavigationPageObject.navigatetoPath(NavigationPageObject.java:59)
+	at regloanscripts.AdminNavigations.NavigationCheck(AdminNavigations.java:34)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1255024717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1255024717'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Reports&quot;}
+  (Session info: chrome=106.0.5249.91)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.29.158&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\sound\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ee224e28289d39075233f3f201aa11a
+*** Element info: {Using=link text, value=Reports}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageobjects.NavigationPageObject.navigatetoPath(NavigationPageObject.java:59)
+	at regloanscripts.AdminNavigations.NavigationCheck(AdminNavigations.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>172</td>
+<td>regloanscripts.AdminNavigations@692f203f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='regloanscripts.AdminNavigations.NavigationCheck()'><b>NavigationCheck</b><br>Test class: regloanscripts.AdminNavigations<br>Parameters: cip.user@gmail.com, 1234@Abcd, CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Pay Calendar Report, admin, chrome<br/>
+<a href="#Output-749443480" onClick='toggleBox("Output-749443480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-749443480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-749443480">
+Clear CIP Page navigation successful.<br/>
+Underwriting Data Page navigation successful.<br/>
+Loan Details Report Page navigation successful.<br/>
+CIP Report Page navigation successful.<br/>
+Withdrawn Loans Report Page navigation successful.<br/>
+Employer Info Report navigation successful.<br/>
+Pay Calendar Report Page navigation successful.<br/>
+</div>
+</td>
+<td></td>
+<td>149</td>
+<td>regloanscripts.AdminNavigations@692f203f</td></tr>
+<tr>
+<td title='regloanscripts.AdminNavigations.NavigationCheck()'><b>NavigationCheck</b><br>Test class: regloanscripts.AdminNavigations<br>Parameters: payroll.els@gmail.com, 1234@Abcd, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Management-Upload Census File#HR Management-Upload PDT File#HR Management-Download PDI File#HR Management-Report Termination#HR Management-Rollback Termination#HR Management-Search Documents#Reports-Pay Deduction Report#HR Faqs, admin, chrome<br/>
+<a href="#Output-648358364" onClick='toggleBox("Output-648358364", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-648358364" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-648358364">
+Create Users Page navigation successful.<br/>
+Edit Existing Users Page navigation successful.<br/>
+Upload Census File Page navigation successful.<br/>
+Upload PDT File Page navigation successful.<br/>
+Download PDI File Page navigation successful.<br/>
+Report Termination Page navigation successful.<br/>
+Rollback Termination Page navigation successful.<br/>
+Search Documents Page navigation successful.<br/>
+Payroll Deduction Report navigation successfull.<br/>
+HR Faqs Page navigation successful.<br/>
+</div>
+</td>
+<td></td>
+<td>178</td>
+<td>regloanscripts.AdminNavigations@692f203f</td></tr>
+<tr>
+<td title='regloanscripts.AdminNavigations.NavigationCheck()'><b>NavigationCheck</b><br>Test class: regloanscripts.AdminNavigations<br>Parameters: cipad.sunrise@gmail.com, 1234@Abcd, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Pay off Loan#Employees-Employee Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Florida Stamp Tax Report, admin, chrome<br/>
+<a href="#Output-1540031691" onClick='toggleBox("Output-1540031691", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1540031691" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1540031691">
+Create Users Page navigation successful.<br/>
+Edit Existing Users Page navigation successful.<br/>
+Clear CIP Page navigation successful.<br/>
+Pay off Loan Page navigation successful.<br/>
+Employee Service Page navigation successful.<br/>
+Underwriting Data Page navigation successful.<br/>
+Loan Details Report Page navigation successful.<br/>
+CIP Report Page navigation successful.<br/>
+Withdrawn Loans Report Page navigation successful.<br/>
+Employer Info Report navigation successful.<br/>
+Florida Stamp Tax Report navigation successful.<br/>
+</div>
+</td>
+<td></td>
+<td>198</td>
+<td>regloanscripts.AdminNavigations@692f203f</td></tr>
+<tr>
+<td title='regloanscripts.AdminNavigations.NavigationCheck()'><b>NavigationCheck</b><br>Test class: regloanscripts.AdminNavigations<br>Parameters: hr.els@gmail.com, 1234@Abcd, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Management-Upload Census File#HR Management-Upload PDT File#HR Management-Download PDI File#HR Management-Report Termination#HR Management-Rollback Termination#HR Management-Search Documents#Reports-Pay Deduction Report#HR Faqs, admin, chrome<br/>
+<a href="#Output-505756829" onClick='toggleBox("Output-505756829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-505756829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-505756829">
+Create Users Page navigation successful.<br/>
+Edit Existing Users Page navigation successful.<br/>
+Upload Census File Page navigation successful.<br/>
+Upload PDT File Page navigation successful.<br/>
+Download PDI File Page navigation successful.<br/>
+Report Termination Page navigation successful.<br/>
+Rollback Termination Page navigation successful.<br/>
+Search Documents Page navigation successful.<br/>
+Payroll Deduction Report navigation successfull.<br/>
+HR Faqs Page navigation successful.<br/>
+</div>
+</td>
+<td></td>
+<td>176</td>
+<td>regloanscripts.AdminNavigations@692f203f</td></tr>
+<tr>
+<td title='regloanscripts.AdminNavigations.NavigationCheck()'><b>NavigationCheck</b><br>Test class: regloanscripts.AdminNavigations<br>Parameters: elstest1061@gmail.com, 123@Abcd, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Pay off Loan#Employees-Employee Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Florida Stamp Tax Report, admin, chrome<br/>
+<a href="#Output-299031853" onClick='toggleBox("Output-299031853", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-299031853" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-299031853">
+Create Users Page navigation successful.<br/>
+Edit Existing Users Page navigation successful.<br/>
+Clear CIP Page navigation successful.<br/>
+Pay off Loan Page navigation successful.<br/>
+Employee Service Page navigation successful.<br/>
+Underwriting Data Page navigation successful.<br/>
+Loan Details Report Page navigation successful.<br/>
+CIP Report Page navigation successful.<br/>
+Withdrawn Loans Report Page navigation successful.<br/>
+Employer Info Report navigation successful.<br/>
+Florida Stamp Tax Report navigation successful.<br/>
+</div>
+</td>
+<td></td>
+<td>198</td>
+<td>regloanscripts.AdminNavigations@692f203f</td></tr>
+<tr>
+<td title='regloanscripts.AdminNavigations.NavigationCheck()'><b>NavigationCheck</b><br>Test class: regloanscripts.AdminNavigations<br>Parameters: banktest.admin@gmail.com, 1234@Abcd, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Employee Service#Employees-Pay off Loan#Employees-Search Documents#Employees-Cancel Loans#Employees-ACH Report#Employees-Customer Service#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Underwriting Data#Reports-Loan Details Report#Reports-Pay Calendar Report#Reports-Pay Deduction Report#Reports-Pay Calendar Report#Reports-Florida Stamp Tax Report#Reports-Employer Info Report#Employers-Upload Payroll Calendar#Employers-Setup New Employer#Employers-Edit Employer#Employers-Employer Dashboard#Employers-Daily Files Verification, admin, chrome<br/>
+<a href="#Output-1179830093" onClick='toggleBox("Output-1179830093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1179830093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1179830093">
+Create Users Page navigation successful.<br/>
+Edit Existing Users Page navigation successful.<br/>
+Clear CIP Page navigation successful.<br/>
+Employee Service Page navigation successful.<br/>
+Pay off Loan Page navigation successful.<br/>
+Search Documents Page navigation successful.<br/>
+Cancel Loans Page navigation successful.<br/>
+ACH Report navigation successful.<br/>
+Customer Service Page navigation successful.<br/>
+CIP Report Page navigation successful.<br/>
+Withdrawn Loans Report Page navigation successful.<br/>
+Underwriting Data Page navigation successful.<br/>
+Loan Details Report Page navigation successful.<br/>
+Pay Calendar Report Page navigation successful.<br/>
+Payroll Deduction Report navigation successfull.<br/>
+Pay Calendar Report Page navigation successful.<br/>
+Florida Stamp Tax Report navigation successful.<br/>
+Employer Info Report navigation successful.<br/>
+Upload Payroll Calendar Page navigation successful.<br/>
+Setup New Employer Page navigation successful.<br/>
+Edit Employer Information Page navigation successful.<br/>
+Employer Dashboard Page navigation successful.<br/>
+Daily Files Verification Page navigation successful.<br/>
+</div>
+</td>
+<td></td>
+<td>366</td>
+<td>regloanscripts.AdminNavigations@692f203f</td></tr>
+</table><p>
+</body>
+</html>

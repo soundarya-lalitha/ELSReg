@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1692.246">
+  <properties />
+  
+  
+            <testcase name="NavigationCheck" time="187.496" classname="regloanscripts.AdminNavigationsTest" />
+                <testcase name="NavigationCheck" time="173.103" classname="regloanscripts.AdminNavigationsTest" />
+                <testcase name="NavigationCheck" time="182.498" classname="regloanscripts.AdminNavigationsTest" />
+                <testcase name="NavigationCheck" time="136.571" classname="regloanscripts.AdminNavigationsTest" />
+                <testcase name="NavigationCheck" time="474.622" classname="regloanscripts.AdminNavigationsTest" />
+                <testcase name="NavigationCheck" time="350.561" classname="regloanscripts.AdminNavigationsTest" />
+                <testcase name="NavigationCheck" time="187.395" classname="regloanscripts.AdminNavigationsTest" />
+      
+</testsuite>

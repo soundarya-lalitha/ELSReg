@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CustomerPortalSanity"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="97.629">
+  <properties />
+  
+  
+            <testcase name="NoCreditNavigate" time="97.629" classname="regLoansNewUI.NoCreditNavigations" />
+      
+</testsuite>

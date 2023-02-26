@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="159.772">
+  <properties />
+  
+  
+            <testcase name="LightStream" time="52.709" classname="regloanscripts.LargeDollarLS_LSFM_NonRed" />
+                <testcase name="LightStream" time="53.736" classname="regloanscripts.LargeDollarLS_LSFM_NonRed" />
+                <testcase name="LightStream" time="53.327" classname="regloanscripts.LargeDollarLS_LSFM_NonRed" />
+      
+</testsuite>

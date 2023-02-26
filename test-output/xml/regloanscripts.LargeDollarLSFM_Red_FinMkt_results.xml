@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="132.290">
+  <properties />
+  
+  
+            <testcase name="LSFMRedFINMkt" time="44.486" classname="regloanscripts.LargeDollarLSFM_Red_FinMkt" />
+                <testcase name="LSFMRedFINMkt" time="44.376" classname="regloanscripts.LargeDollarLSFM_Red_FinMkt" />
+                <testcase name="LSFMRedFINMkt" time="43.428" classname="regloanscripts.LargeDollarLSFM_Red_FinMkt" />
+      
+</testsuite>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RegressionTest">
+              <span class="suite-name border-failed">RegressionTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RegressionTest">
+                    <span>D:\SeleniumWorkSpace\CodeBase\RegUpdate\RegNewUIAdminSanity.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RegressionTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RegressionTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RegressionTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RegressionTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RegressionTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RegressionTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 7 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionTest" class="hide-methods failed suite-RegressionTest"> (hide)</a> <!-- hide-methods failed suite-RegressionTest -->
+                      <a href="#" panel-name="suite-RegressionTest" class="show-methods failed suite-RegressionTest"> (show)</a> <!-- show-methods failed suite-RegressionTest -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest" title="regLoansNewUI.AdminNavigationsTest" hash-for-method="NavigationCheck(hr.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Man...)">NavigationCheck(hr.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Man...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest" title="regLoansNewUI.AdminNavigationsTest" hash-for-method="NavigationCheck(bank.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP ...)">NavigationCheck(bank.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest" title="regLoansNewUI.AdminNavigationsTest" hash-for-method="NavigationCheck(cip.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP M...)">NavigationCheck(cip.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP M...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest" title="regLoansNewUI.AdminNavigationsTest" hash-for-method="NavigationCheck(cipadmin.sunrise@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing User...)">NavigationCheck(cipadmin.sunrise@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing User...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest" title="regLoansNewUI.AdminNavigationsTest" hash-for-method="NavigationCheck(cip.user@gmail.com, Paswrd@123#, CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-L...)">NavigationCheck(cip.user@gmail.com, Paswrd@123#, CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-L...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest" title="regLoansNewUI.AdminNavigationsTest" hash-for-method="NavigationCheck(payroll.master@elsmaster.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Us...)">NavigationCheck(payroll.master@elsmaster.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest" title="regLoansNewUI.AdminNavigationsTest" hash-for-method="NavigationCheck(elstest1060@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#Emp...)">NavigationCheck(elstest1060@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#Emp...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionTest" class="panel RegressionTest">
+          <div class="suite-RegressionTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">regLoansNewUI.AdminNavigationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigationCheck(hr.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Man...)">
+                  </a> <!-- NavigationCheck(hr.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Man...) -->
+                  <span class="method-name">NavigationCheck</span>
+                  <span class="parameters">(hr.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Management-Upload Census File#HR Management-Upload PDT File#HR Management-Download PDI File#HR Management-Report Termination#HR Management-Rollback Termination#HR Management-Search Documents#Reports-Pay Deduction Report#HR Faqs, admin, chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigationCheck(bank.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP ...)">
+                  </a> <!-- NavigationCheck(bank.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP ...) -->
+                  <span class="method-name">NavigationCheck</span>
+                  <span class="parameters">(bank.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Employee Service#Employees-Pay off Loan#Employees-Search Documents#Employees-Cancel Loans#Employees-ACH Report#Employees-Customer Service#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Underwriting Data#Reports-Loan Details Report#Reports-Pay Calendar Report#Reports-Pay Deduction Report#Reports-Pay Calendar Report#Reports-Florida Stamp Tax Report#Reports-Employer Info Report#Employers-Upload Payroll Calendar#Employers-Setup New Employer#Employers-Edit Employer#Employers-Employer Dashboard#Employers-Daily Files Verification, admin, chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigationCheck(cip.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP M...)">
+                  </a> <!-- NavigationCheck(cip.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP M...) -->
+                  <span class="method-name">NavigationCheck</span>
+                  <span class="parameters">(cip.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Pay off Loan#Employees-Employee Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Florida Stamp Tax Report, admin, chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigationCheck(cipadmin.sunrise@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing User...)">
+                  </a> <!-- NavigationCheck(cipadmin.sunrise@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing User...) -->
+                  <span class="method-name">NavigationCheck</span>
+                  <span class="parameters">(cipadmin.sunrise@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP Management-Clear CIP Status#Employees-Pay off Loan#Employees-Employee Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Florida Stamp Tax Report, admin, chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigationCheck(cip.user@gmail.com, Paswrd@123#, CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-L...)">
+                  </a> <!-- NavigationCheck(cip.user@gmail.com, Paswrd@123#, CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-L...) -->
+                  <span class="method-name">NavigationCheck</span>
+                  <span class="parameters">(cip.user@gmail.com, Paswrd@123#, CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-Loan Details Report#Reports-CIP Report#Reports-Withdrawn Loans Report#Reports-Employer Info Report#Reports-Pay Calendar Report, admin, chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigationCheck(payroll.master@elsmaster.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Us...)">
+                  </a> <!-- NavigationCheck(payroll.master@elsmaster.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Us...) -->
+                  <span class="method-name">NavigationCheck</span>
+                  <span class="parameters">(payroll.master@elsmaster.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Management-Upload Census File#HR Management-Upload PDT File#HR Management-Download PDI File#HR Management-Report Termination#HR Management-Rollback Termination#HR Management-Search Documents#Reports-Pay Deduction Report#HR Faqs, admin, chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigationCheck(elstest1060@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#Emp...)">
+                  </a> <!-- NavigationCheck(elstest1060@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#Emp...) -->
+                  <span class="method-name">NavigationCheck</span>
+                  <span class="parameters">(elstest1060@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#Employees-Employee Service#Employees-Clear CIP Status#Employees-Pay off Loan#Employees-Customer Service#Reports-Underwriting Data#Reports-Loan Details Report#Reports-Revenue Report#Reports-Pay Calendar Report#Reports-Pay Deduction Report#Reports-Daily Loans Details#Reports-Search Documents#Reports-Blackout Schedule#Reports-School Calendar#Reports-Florida Stamp Tax Report#Reports-Employer Info Report#Reports-ACH Report#Employers-Setup New Employer#Employers-Edit Employer#Employers-Employer Dashboard#Employers-Daily Files Verification#Employers-Upload Payroll Calendar#Employers-Upload Census File#Employers-Upload PDT File#Employers-Download PDI File#Admin-App Log#Admin-Census Search#Admin-Report Termination#Admin-Rollback Termination#Admin-Upload LoanBalance#Admin-Cancel Loans, admin, chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 109.0.5414.120 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KCMKG2H&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x008D1ED3+2236115]
+	Ordinal0 [0x008692F1+1807089]
+	Ordinal0 [0x007766FD+812797]
+	Ordinal0 [0x00798C6D+953453]
+	Ordinal0 [0x00794200+934400]
+	Ordinal0 [0x007919C9+924105]
+	Ordinal0 [0x007C806C+1146988]
+	Ordinal0 [0x007C7A6A+1145450]
+	Ordinal0 [0x007C18A6+1120422]
+	Ordinal0 [0x0079A73D+960317]
+	Ordinal0 [0x0079B71F+964383]
+	GetHandleVerifier [0x00B7E7E2+2743074]
+	GetHandleVerifier [0x00B708D4+2685972]
+	GetHandleVerifier [0x00962BAA+532202]
+	GetHandleVerifier [0x00961990+527568]
+	Ordinal0 [0x0087080C+1837068]
+	Ordinal0 [0x00874CD8+1854680]
+	Ordinal0 [0x00874DC5+1854917]
+	Ordinal0 [0x0087ED64+1895780]
+	BaseThreadInitThunk [0x767E00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at pageobjects.ELSLoginPageObject.&lt;init&gt;(ELSLoginPageObject.java:81)
+	at regLoansNewUI.AdminNavigationsTest.NavigationCheck(AdminNavigationsTest.java:22)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest-class-failed -->
+        </div> <!-- panel RegressionTest -->
+        <div panel-name="test-xml-RegressionTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\SeleniumWorkSpace\CodeBase\RegUpdate\RegNewUIAdminSanity.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RegressionTest&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;regLoansNewUI.AdminNavigationsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression --&gt;
+&lt;/suite&gt; &lt;!-- RegressionTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionTest');
+function tableData_RegressionTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'NavigationCheck')
+data.setCell(0, 2, 'regLoansNewUI.AdminNavigationsTest')
+data.setCell(0, 3, 2457);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'NavigationCheck')
+data.setCell(1, 2, 'regLoansNewUI.AdminNavigationsTest')
+data.setCell(1, 3, 1729);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'NavigationCheck')
+data.setCell(2, 2, 'regLoansNewUI.AdminNavigationsTest')
+data.setCell(2, 3, 1641);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'NavigationCheck')
+data.setCell(3, 2, 'regLoansNewUI.AdminNavigationsTest')
+data.setCell(3, 3, 1593);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'NavigationCheck')
+data.setCell(4, 2, 'regLoansNewUI.AdminNavigationsTest')
+data.setCell(4, 3, 1579);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'NavigationCheck')
+data.setCell(5, 2, 'regLoansNewUI.AdminNavigationsTest')
+data.setCell(5, 3, 1554);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'NavigationCheck')
+data.setCell(6, 2, 'regLoansNewUI.AdminNavigationsTest')
+data.setCell(6, 3, 1386);
+window.suiteTableData['RegressionTest']= { tableData: data, tableDiv: 'times-div-RegressionTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-RegressionTest">
+              </div> <!-- times-div-RegressionTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">regLoansNewUI.AdminNavigationsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NavigationCheck(hr.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#HR Man...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NavigationCheck(elstest1060@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#Emp...)</span>
+                <span class="method-start">2469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NavigationCheck(cip.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP M...)</span>
+                <span class="method-start">4206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NavigationCheck(cip.user@gmail.com, Paswrd@123#, CIP Management-Clear CIP Status#Reports-Underwriting Data#Reports-L...)</span>
+                <span class="method-start">5763 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NavigationCheck(bank.admin@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Users#CIP ...)</span>
+                <span class="method-start">7154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NavigationCheck(cipadmin.sunrise@gmail.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing User...)</span>
+                <span class="method-start">8801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NavigationCheck(payroll.master@elsmaster.com, Paswrd@123#, User Accounts-Create Users#User Accounts-Edit Existing Us...)</span>
+                <span class="method-start">10397 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

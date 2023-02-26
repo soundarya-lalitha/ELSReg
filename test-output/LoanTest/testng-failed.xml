@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LoanTest]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="LoansForPayoffcase(failed)">
+    <classes>
+      <class name="regloanscripts.PayOffLoans">
+        <methods>
+          <include name="LoanPayoff" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- regloanscripts.PayOffLoans -->
+    </classes>
+  </test> <!-- LoansForPayoffcase(failed) -->
+</suite> <!-- Failed suite [LoanTest] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MakePayment]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="RegressionMakePayment(failed)">
+    <classes>
+      <class name="regloanscripts.MakeAPayment">
+        <methods>
+          <include name="MakePayment" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- regloanscripts.MakeAPayment -->
+    </classes>
+  </test> <!-- RegressionMakePayment(failed) -->
+</suite> <!-- Failed suite [MakePayment] -->

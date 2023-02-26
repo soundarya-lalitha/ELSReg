@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="205.894">
+  <properties />
+  
+  
+            <testcase name="customerCreationReject" time="68.326" classname="regloanscripts.CustomerCreation_Rejected" />
+                <testcase name="customerCreationReject" time="70.044" classname="regloanscripts.CustomerCreation_Rejected" />
+                <testcase name="customerCreationReject" time="67.524" classname="regloanscripts.CustomerCreation_Rejected" />
+      
+</testsuite>

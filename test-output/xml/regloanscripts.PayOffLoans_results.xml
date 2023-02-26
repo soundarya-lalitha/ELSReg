@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LoansForPayoffcase"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="323.225">
+  <properties />
+  
+  
+            <testcase name="LoanPayoff" time="323.225" classname="regloanscripts.PayOffLoans" />
+      
+</testsuite>

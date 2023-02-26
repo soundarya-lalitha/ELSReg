@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CIPTests"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="432.661">
+  <properties />
+  
+  
+            <testcase name="CIPClear" time="218.888" classname="regCIPscripts.CIPClearTests" />
+                <testcase name="CIPClear" time="213.773" classname="regCIPscripts.CIPClearTests" />
+      
+</testsuite>

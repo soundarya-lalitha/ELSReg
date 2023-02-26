@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegLoansCycle1"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="526.013">
+  <properties />
+  
+  
+            <testcase name="customerOneLoan_Reject_Other" time="132.088" classname="regLoansNewUI.OneLoanTests" />
+                <testcase name="customerOneLoan_Reject_Other" time="129.305" classname="regLoansNewUI.OneLoanTests" />
+                <testcase name="customerOneLoan_Reject_Other" time="130.959" classname="regLoansNewUI.OneLoanTests" />
+                <testcase name="customerOneLoan_Reject_Other" time="133.661" classname="regLoansNewUI.OneLoanTests" />
+      
+</testsuite>
