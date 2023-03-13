@@ -1,11 +1,19 @@
 	<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="CustomerPortalSanity">
+<<<<<<< HEAD
+<suite name="CustomerPortal">
+=======
+<suite name="RegressionTest">
+>>>>>>> test
 <listeners>
       <listener class-name="org.uncommons.reportng.HTMLReporter"/>
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
+<<<<<<< HEAD
 	<test name="CustomerPortalSanity" preserve-order="true">
+=======
+	<test name="RegressionSanity" preserve-order="true">
+>>>>>>> test
 		<!--  packages-->
 		 <!--  /packages-->
 		<classes> 
