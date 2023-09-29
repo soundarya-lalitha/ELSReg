@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.CustomerRejectLoanDataProvider;
+import dataproviders.CustomerRejectLoanDataProvider;
 import pageobjects.*;
 import testcases.util.TestUtil;
 

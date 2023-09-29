@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.CustNavigationDataProvider;
+import dataproviders.CustNavigationDataProvider;
 import pageobjects.NavigationPageObject;
 import pageobjects.ELSLoginPageObject;
 import testcases.util.TestUtil;

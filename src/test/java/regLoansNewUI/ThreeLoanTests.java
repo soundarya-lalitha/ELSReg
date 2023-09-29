@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.CustomerLoan3RejectNextDataProvider;
+import dataproviders.CustomerLoan3RejectNextDataProvider;
 import pageobjects.*;
 import testcases.util.TestUtil;
 
@@ -19,12 +19,10 @@ public class ThreeLoanTests {
 	{
 	//login to the ELS application and click on Start Application
 	ELSLoginPageObject lpo=new ELSLoginPageObject(browserType, userType);
+	AppInfoPageObject ai2 = new AppInfoPageObject();
 
-	//Click i Agree and continue on the review disclosure pages
-	//ReviewDisclosurePageObject rd =TestUtil.reviewdisclosure(lpo);
-	
 	//Verify employee to create customer with last name, zip code and date of birth
-	CreateCustomerPageObject cc = new CreateCustomerPageObject();
+	CreateCustomerPageObject cc = new CreateCustomerPageObject();	
 	cc.setBrowser(lpo.getBrowser());
 	cc.verifyEmployee(lastname, zip, dob);
 	cc.clkContinueORNextButton();
@@ -47,32 +45,6 @@ public class ThreeLoanTests {
 			{
 				cc.close();
 				Reporter.log("The Customer already created.");
-			}
-			else      //Create a Customer				
-			{	
-				//enter customer email pwd and questions---Enter customer details to create
-				cc.createAccountData(email, password,question1,question2);
-				cc.clkContinueORNextButton(); 
-				//check customer creation is successful or not
-				custcreate=cc.verifyAppinfoNavigation();	
-				if (custcreate==true)
-				{
-					Reporter.log("Customer Creation is successful.");
-				}
-				else
-				{
-					Reporter.log("Customer Creation is not successful.");
-					Assert.assertEquals("Customer is not created.","Customer should be created.");	
-				}	
-				cc.clkLogOut();
-				cc.close();
-			}	
-		}	
-
-		/////custexists=true;custcreate=true;
-		
-			if ((custexists==true) || (custcreate==true))
-			{
 				ELSLoginPageObject lpoloan=new ELSLoginPageObject(browserType, userType);
 				TestUtil.elslogin(email, password, lpoloan);	
 				//customer takes one loan
@@ -83,11 +55,42 @@ public class ThreeLoanTests {
 				lpoloan.clickNoCreditLoan();
 				Thread.sleep(5000);
 				//Click on New Loan link
-				lpoloan.clickNewLoan();
-				
+				lpoloan.clickNewLoan();				
 				//---enter application info---enter ssn	and home phone,city,state and address
-				AppInfoPageObject ai2 =TestUtil.appInfoFlowwithEmpData1(ssnvalue, homephonevalue,wrkemail,add,city,state,workstate, lpoloan);
-				String nooa1Message=ai2.getMessage();
+				ai2 =TestUtil.appInfoFlowwithEmpData1(ssnvalue, homephonevalue,wrkemail,add,city,state,workstate, lpoloan);
+			}
+			else      			
+			{	
+					//enter customer email pwd and questions---Create a Customer
+					cc.createAccountData(email, password,question1,question2);
+					cc.clkContinueORNextButton(); 
+					cc.clickNoCreditLoan();	
+					//check customer creation is successful or not
+					custcreate=cc.verifyAppinfoNavigation();
+					if (custcreate==true)
+					{
+						Reporter.log("Customer Creation is successful.");
+						TestUtil.addAddressManually(add,city,state,cc);
+						//---enter application info---enter ssn	and home phone,city,state and address
+						Reporter.log("Customer with User Name: " +email +" tries to take first Loan of : "+loanoption1); 
+						ai2 =TestUtil.appInfoFlowwithEmpData3(ssnvalue, homephonevalue,wrkemail,add,city,state,workstate, cc);
+					}
+					else
+					{
+						Reporter.log("Customer Creation is not successful.");
+						Assert.assertEquals("Customer is not created.","Customer should be created.");	
+					}	
+				}	
+			
+
+		/////custexists=true;custcreate=true;
+		
+			//if ((custexists==true) || (custcreate==true))
+			
+			
+			  
+			 String nooa1Message=ai2.getMessage();
+			 
 				if(nooa1Message != "NOAA Error has not occured."){					
 					ai2.clkLogOut();
 					// close the browser
@@ -106,8 +109,6 @@ public class ThreeLoanTests {
 					Thread.sleep(5000);
 					//Click on New Loan link
 					lc.clickNewLoan();
-					//---check  I meet check box and click on continue button and elect disclosure page chk agree check box and click on continue click
-					//ReviewDisclosurePageObject rdloan2 =TestUtil.reviewdisclosure2(lc);
 					//---enter application info---enter ssn	and home phone
 					AppInfoPageObject ai3 = TestUtil.appInfoFlowwithEmpData2(ssnvalue, homephonevalue,wrkemail,add,city,state,workstate, lc);
 					String nooa2Message=ai3.getMessage();
@@ -183,7 +184,9 @@ public class ThreeLoanTests {
 				
 				
 	}
+	
 }
+
 	
 						
 					

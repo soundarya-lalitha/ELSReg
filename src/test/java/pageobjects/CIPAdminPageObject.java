@@ -15,42 +15,7 @@ public class CIPAdminPageObject extends MasterPageObject{
 		super();
 	}
 	
-	/** Click on corresponding loan number on cip clear page
-	 * @throws InterruptedException 
-	 */
 	
-	/*public void clkCIPClearLoanNumber(String loanNumber) throws InterruptedException
-	{
-		Thread.sleep(3000);
-		WebElement parentContainerElement = browser.findElement(By.cssSelector(prop.getProperty("opencipscontainer")));
-		WebElement CIPtable = parentContainerElement.findElement(By.tagName("table"));
-		
-		
-		WebElement CIPtable2 = CIPtable.findElement(By.tagName("tbody"));
-		
-		
-		List<WebElement> trelements=CIPtable2.findElements(By.tagName("tr"));
-			for(WebElement var :trelements){	
-				boolean existflag = var.findElements(By.tagName("td")).size()!=0;
-				if (existflag==true)
-				{
-					WebElement td=var.findElement(By.tagName("td"));	
-					boolean existflag1 = td.findElements(By.tagName("a")).size()!=0;
-					if (existflag1==true)
-					{
-						WebElement reqnumberele=td.findElement(By.tagName("a"));
-						String loannum=reqnumberele.getText();
-							if (loannum.equals(loanNumber))
-							{							
-								reqnumberele.click();
-								break;
-								
-							}
-					}
-				}
-			}
-	}
-
 /** Click on corresponding loan number on cip clear page
 	 * @throws InterruptedException 
 	 */
@@ -93,7 +58,6 @@ public class CIPAdminPageObject extends MasterPageObject{
  /** Enter last name or first name of the employee
  * @throws InterruptedException */
 public void CIPProcess(String employer,String loanNumber,String cipaction,String ssn2) throws InterruptedException {
-	//this.enterText(By.cssSelector(prop.getProperty("employertxt")), "emplo");
 	this.selectListValue(employer, By.cssSelector(prop.getProperty("selectEmployerCIPClearPage")), By.cssSelector(prop.getProperty("employerMenuCIPClearPage")));
 	this.clkButton(By.cssSelector(prop.getProperty("allOpenCIPButton")));
 	

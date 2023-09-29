@@ -1,6 +1,8 @@
 package pageobjects;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 
 /**
@@ -153,9 +155,56 @@ public boolean  verifyAppinfoNavigation() {
 	boolean existflag =this.chkElementExists(By.cssSelector(prop.getProperty("ssn")));
 	return existflag;	
 }
+
+
+/**
+ * enable address fields so that customer manually enters address
+ * @throws InterruptedException 
+ */
+public void enableAdd() throws InterruptedException {
+	
+	this.waitFor(By.cssSelector(prop.getProperty("empenableaddress")), 100);	
+	//this.clkButtonwithJS(by);
+	WebElement enableAddIcon=browser.findElement(By.cssSelector(prop.getProperty("empenableaddress")));
+	enableAddIcon.click();	
+		/*
+		 * code to perform click with Action class if image button in case not clickable
+		 * WebElement searchTextBox=browser.findElement(By.cssSelector(prop.getProperty("addSearchtxt")));
+		 * searchTextBox.sendKeys("123490 E Laraway Rd  Joliet IL 60433");
+		 *  Actions act = new Actions(browser); act.sendKeys(Keys.TAB).build().perform();
+		 * act.sendKeys(Keys.ENTER).build().perform();
+		 */
+	Thread.sleep(1000);
+	WebElement enableAddlnk=browser.findElement(By.cssSelector(prop.getProperty("enaleaddlnk")));
+	enableAddlnk.click();
+	}
+	
 	
 	/**
-	 verify whether navigated to existing customer page
+	 * enter address for new customer
+	 */
+	public void enterAdd(String add) {
+		WebElement addTextBox=browser.findElement(By.cssSelector(prop.getProperty("empAddress")));
+		addTextBox.sendKeys(add);
+	}
+	/**
+	 * enter city for new customer
+	 */
+	public void entercity(String city) {
+		WebElement cityTextBox=browser.findElement(By.cssSelector(prop.getProperty("empCity")));
+		cityTextBox.sendKeys(city);
+	}
+	
+	/**
+	 * select state for new customer
+	 */
+	public void selectState(String state) throws InterruptedException {
+		
+		this.selectByValMethod(By.cssSelector(prop.getProperty("selectState")), state);
+	}
+	
+
+	 /*verify whether navigated to existing customer page
 	 */	
 	public boolean ChkCustomerExists() {
 		boolean existflag =this.chkElementExists(By.cssSelector(prop.getProperty("existingCustomerLabel")));
@@ -177,26 +226,8 @@ public boolean  verifyAppinfoNavigation() {
 		//this.selectListValue(ques2, By.cssSelector(prop.getProperty("selectQuestion2")), By.cssSelector(prop.getProperty("questionMenu2")));
 		this.selectByValMethod(By.cssSelector(prop.getProperty("customerSecQues2")),ques2);
 	}
-	/**
-	 * select state for new customer
-	 */
-	public void selectState(String state) throws InterruptedException {
-		this.selectListValue(state, By.cssSelector(prop.getProperty("selectState")), By.cssSelector(prop.getProperty("stateMenu")));
-	}
-	/**
-	 * enter address for new customer
-	 */
-	public void enterAdd(String add) {
-		WebElement addTextBox=browser.findElement(By.cssSelector(prop.getProperty("empAddress")));
-		addTextBox.sendKeys(add);
-	}
-	/**
-	 * enter city for new customer
-	 */
-	public void entercity(String city) {
-		WebElement cityTextBox=browser.findElement(By.cssSelector(prop.getProperty("empCity")));
-		cityTextBox.sendKeys(city);
-	}
+	
+	
 	/**
 	 * get customer rejection pop up
 	 */

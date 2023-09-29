@@ -3,7 +3,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.CreditTerminatedCustomer;
+import dataproviders.CreditTerminatedCustomer;
 import pageobjects.ELSLoginPageObject;
 import testcases.util.TestUtil;
 

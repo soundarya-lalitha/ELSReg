@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -100,9 +101,12 @@ public void selectPayoffDate() throws InterruptedException {
 	 calendar.setTime(new Date());
 	 calendar.add(Calendar.DATE,40);
 	 	 
-	 SimpleDateFormat formatter = new SimpleDateFormat("MMM");
+	 //SimpleDateFormat formatter = new SimpleDateFormat("MMM");
+	 SimpleDateFormat  formatter = new SimpleDateFormat("MMM",Locale.ENGLISH); 
 	 String mon;
 	 mon=formatter.format(calendar.getTime());
+	 
+	 //System.out.println("month is " +mon);
 	 
 	 SimpleDateFormat formatter1 = new SimpleDateFormat("yyyy");
 	 String year;

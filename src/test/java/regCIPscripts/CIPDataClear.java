@@ -10,8 +10,8 @@ public class CIPDataClear {
 	public void CIPClear() throws Exception
 	{	
 				
-			TestUtil.cIPAdminProcessCIP("cip.admin@test.com", "Paswrd@123#", "CIP Management-Clear CIP Status", "Employee Loan Solutions", "Decline", "",  "admin","chrome","5000133031");
-			TestUtil.cIPAdminProcessCIP("cip.admin@test.com", "Paswrd@123#", "CIP Management-Clear CIP Status", "Employee Loan Solutions", "Decline", "",  "admin","chrome","5000133031");
+			TestUtil.cIPAdminProcessCIP("cip.admin@gmail.com", "Paswrd@123#", "CIP Management-Clear CIP Status", "Employee Loan Solutions", "Decline", "",  "admin","chrome","5000053885");
+			TestUtil.cIPAdminProcessCIP("cip.admin@gmail.com", "Paswrd@123#", "CIP Management-Clear CIP Status", "Employee Loan Solutions", "Decline", "",  "admin","chrome","5000053883");
 	}
 	
 	

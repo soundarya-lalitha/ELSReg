@@ -11,7 +11,7 @@ public class CustomerDataProvider {
 	@DataProvider(name = "customer")
 	public static Object[][] getCustomerData() throws Exception {
 		log.info("starting to get customer data");
-		log.info("this is from dataproviders_test provider");
+		log.info("this is from dataproviders provider");
 		
 		String sheetName = "Create_Customer";
 		String filePath = ClassLoader.getSystemResource("TestData.xls").getFile();

@@ -3,7 +3,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.GarnishedCustLoanRejectedDataProvider;
+import dataproviders.GarnishedCustLoanRejectedDataProvider;
 import pageobjects.AppInfoPageObject;
 import pageobjects.ELSLoginPageObject;
 import pageobjects.ReviewDisclosurePageObject;

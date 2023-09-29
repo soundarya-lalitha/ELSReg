@@ -1,31 +1,28 @@
-	<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="RegressionTest">
+
+	<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+	
+	
+
+<suite name="CIPTest">
 <listeners>
+
       <listener class-name="org.uncommons.reportng.HTMLReporter"/>
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-	<test name="Regression" preserve-order="true">
+	<test name="CIPTests" preserve-order="true">
 		<!--  packages-->
 		 <!--  /packages-->
-		<classes> 
-				
-				
-				 				
+		<classes> 		
+		
+	
+			<class name="regCIPscripts.CIPClearTests"> </class>
+			<class name="regCIPscripts.CIPFailureAppInfo"> </class>
+			<class name="regCIPscripts.CIPNotClearedTests"> </class>
 			
-				<class name="regloanscripts.Verify_Employment"> </class>
-				<class name="regloanscripts.CustCreate_Rej_Lessthan18Age"> </class>		
-				
-				
-				
-				 
-				
-				
-				 
 		</classes>
 		
 	</test>
-	
 </suite>
 
 

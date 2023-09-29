@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.CustomerRejectDataProvider;
+import dataproviders.CustomerRejectDataProvider;
 import pageobjects.*;
 import testcases.util.TestUtil;
 
@@ -25,6 +25,7 @@ public class Verify_Employment {
 		cc.clkContinueORNextButton();
 		//get the error	
 		Thread.sleep(2000);
+		
 		
 		String result=cc.getCustError();
 		

@@ -16,11 +16,11 @@
 <source>1.8</source>
 <target>1.8</target> -->
 
-<!--java17 -->
-<version>3.8.0</version> 
+<!--java11 -->
+<version>3.11.0</version> 
 <configuration> 
-<source>17</source>
-<target>17</target> 
+<source>11</source>
+<target>11</target> 
 </configuration> 
 </plugin>     
 <plugin> 
@@ -126,7 +126,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.8.3</version>
+            <version>7.3.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -212,12 +212,6 @@
     <groupId>com.google.guava</groupId>
     <artifactId>guava</artifactId>
     <version>30.0-jre</version>
-</dependency>
-
-<dependency>
-  <groupId>org.slf4j</groupId>
-  <artifactId>slf4j-simple</artifactId>
-  <version>1.7.21</version>
 </dependency>
 	
     

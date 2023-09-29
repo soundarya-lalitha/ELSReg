@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.LightStreamDataProvider;
+import dataproviders.LightStreamDataProvider;
 import pageobjects.ELSLoginPageObject;
 import pageobjects.LargeDollarPageObject;
 import testcases.util.TestUtil;

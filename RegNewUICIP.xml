@@ -17,8 +17,7 @@
 			<class name="regCIPscripts.CIPClearTests"> </class>
 			<class name="regCIPscripts.CIPFailureAppInfo"> </class>
 			<class name="regCIPscripts.CIPNotClearedTests"> </class>
-		
-					 
+			
 		</classes>
 		
 	</test>

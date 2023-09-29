@@ -20,6 +20,7 @@ import org.testng.Reporter;
 
 import pageobjects.AppInfoPageObject;
 import pageobjects.CIPAdminPageObject;
+import pageobjects.CreateCustomerPageObject;
 import pageobjects.ELSLoginPageObject;
 import pageobjects.LoanConfirmationPageObject;
 import pageobjects.LoanPayOffPageObject;
@@ -73,15 +74,44 @@ public class TestUtil {
 		return actualError;
 	}
 	 
-	public static AppInfoPageObject appInfoFlowwithEmpData1(String ssnvalue, String homephonevalue,String wrkemail,String add, String city,String state,String workstate, ELSLoginPageObject lp)
+	
+	  public static AppInfoPageObject appInfoFlowwithEmpData1(String ssnvalue, String homephonevalue,String wrkemail,String add, String city,String
+	  state,String workstate, ELSLoginPageObject lp) throws Exception,InterruptedException 
+	  { 
+		  AppInfoPageObject ai = new AppInfoPageObject();
+		  ai.setBrowser(lp.getBrowser()); 
+		  Thread.sleep(2000);
+		 //enter SSN and Home Phone 
+		  ai.enterSSN(ssnvalue);
+		  ai.enterHomePhone(homephonevalue); 
+		  if (wrkemail.equalsIgnoreCase("No"))
+		  {
+			  System.out.println("Work email will not be entered."); 
+		  } 
+		  else 
+		  {
+			  ai.enterWorkEmail(wrkemail); 
+		  } 
+		  Thread.sleep(3000);
+		  ai.chkEligANDdisclosure();
+		  Thread.sleep(3000);
+		  //---click submit 
+		  ai.clkContinueORNextButton();
+		  Thread.sleep(1000); 
+		  //---capture error 
+		  String actualError= ai.getError();
+		  ai.setMessage(actualError); 
+		  return ai; 
+	  }
+	 
+	
+	public static AppInfoPageObject appInfoFlowwithEmpData3(String ssnvalue, String homephonevalue,String wrkemail,String add, String city,String state,String workstate, CreateCustomerPageObject cc)
 			throws Exception, InterruptedException {
 		AppInfoPageObject ai = new AppInfoPageObject();
-		  ai.setBrowser(lp.getBrowser());		
-		  /*ai.enterAdd(add); 
-		  ai.entercity(city);
-		  ai.selectState(state);*/
-		  //ai.selectWorkState(workstate);
-		 
+		  ai.setBrowser(cc.getBrowser());		
+		  Thread.sleep(2000);		 
+		
+		 //enter SSN and Home Phone
 		 ai.enterSSN(ssnvalue);
 		 ai.enterHomePhone(homephonevalue);	
 		 if (wrkemail.equalsIgnoreCase("No"))
@@ -105,16 +135,23 @@ public class TestUtil {
 		return ai;
 	}
 	
+	public static CreateCustomerPageObject addAddressManually(String add, String city,String state,CreateCustomerPageObject cc)
+			throws Exception, InterruptedException {
+		Thread.sleep(1000);
+		  cc.enableAdd();
+		  //first enable address fields and fill data manually		
+		  Thread.sleep(1000);
+		 cc.enterAdd(add); 
+		 cc.entercity(city); 
+		 cc.selectState(state);			 
+		 return cc;
+	}
+	
 	public static AppInfoPageObject appInfoFlowwithEmpData2(String ssnvalue, String homephonevalue,String wrkemail,String add, String city,String state,String workstate, LoanConfirmationPageObject lc)
 			throws Exception, InterruptedException {
 		AppInfoPageObject ai = new AppInfoPageObject();
 		  ai.setBrowser(lc.getBrowser());		
-		  /*ai.enterAdd(add); 
-		  ai.entercity(city);
-		  ai.selectState(state);*/
-		  //ai.selectWorkState(workstate);
-		  
-		 ai.enterSSN(ssnvalue);
+		  ai.enterSSN(ssnvalue);
 		 if (wrkemail.equalsIgnoreCase("No"))
 		 {
 			 System.out.println("Work email will not be entered.");
@@ -123,7 +160,7 @@ public class TestUtil {
 		 {
 				 ai.enterWorkEmail(wrkemail);
 		 }
-		 //ai.enterHomePhone(homephonevalue);	
+		 ai.enterHomePhone(homephonevalue);	
 		 //ai.enterWorkEmail(wrkemail);		 
 		
 		 Thread.sleep(3000);
@@ -176,21 +213,7 @@ public class TestUtil {
 
 	
 	
-	/*Obsolete flow
-	 * public static ReviewDisclosurePageObject reviewdisclosure(ELSLoginPageObject
-	 * clpo) throws Exception { ReviewDisclosurePageObject rd = new
-	 * ReviewDisclosurePageObject(); rd.setBrowser(clpo.getBrowser());
-	 * Thread.sleep(5000); boolean exists=rd.chkReviewPageExists(); if (exists ==
-	 * true) { rd.chkMeet(); rd.clkContinue(); rd.chkAgree(); rd.clkContinue(); }
-	 * return rd; }
-	 * 
-	 * public static ReviewDisclosurePageObject
-	 * reviewdisclosure2(LoanConfirmationPageObject clpo) throws Exception {
-	 * ReviewDisclosurePageObject rd = new ReviewDisclosurePageObject();
-	 * rd.setBrowser(clpo.getBrowser()); boolean exists=rd.chkReviewPageExists(); if
-	 * (exists == true) { rd.chkMeet(); rd.clkContinue(); rd.chkAgree();
-	 * rd.clkContinue(); } return rd; }
-	 */
+	
 		public static boolean  elslogin(String email, String password, ELSLoginPageObject lpo) throws InterruptedException {
 		lpo.clickLoginLink();
 		Thread.sleep(3000);
@@ -364,6 +387,24 @@ public class TestUtil {
 		  }
 		  return (lb);				  
 	}
+	//Loan procedure complete new function
+public static AppInfoPageObject loanCompleteAndAppinfo(String loanoption, String routno, String acctno1,String AcnTy,String ename, AppInfoPageObject ai,String ssnvalue,String homephonevalue,String wrkemail,String add,String city,String state,String workstate,LoanConfirmationPageObject lc)
+			throws Exception {
+		//LoanConfirmationPageObject lb=new LoanConfirmationPageObject();		
+		//ai.setBrowser(ai.getBrowser()); 	
+		lc=TestUtil.loanProcedureUserloggedIn(loanoption, routno, acctno1,AcnTy,ename, ai);
+		//In new web site My Account link should be clicked to reach the home page
+		lc.clkMyAccount();
+		//customer takes second loan
+		////////********Reporter.log("Customer with User Name: " +email +" tries to take second Loan of : "+loanoption);
+		//---click on new loan link
+		Thread.sleep(5000);
+		lc.clickNewLoan();						
+		//---enter application info---enter ssn	and home phone
+		AppInfoPageObject ai3 = TestUtil.appInfoFlowwithEmpData2(ssnvalue, homephonevalue,wrkemail,add,city,state,workstate, lc);
+		//String nooa2Message=ai3.getMessage();		
+		return ai;
+}
 	
 /** Customer clicks on Apply Again and Completed loan**/
 	public static void customerApplyAgain(String email, String password,String cipaction2,String homephone, String address, String city,

@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import dataproviders_stage.CIPNotClearDataProvider;
+import dataproviders.CIPNotClearDataProvider;
 import pageobjects.AppInfoPageObject;
 
 

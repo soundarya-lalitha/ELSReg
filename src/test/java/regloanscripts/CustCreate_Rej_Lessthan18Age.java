@@ -6,7 +6,7 @@ import org.testng.Reporter;
 
 import org.testng.annotations.Test;
 
-import dataproviders_stage.CustomerLess18AgeDataProvider;
+import dataproviders.CustomerLess18AgeDataProvider;
 import pageobjects.*;
 import testcases.util.TestUtil;
 
