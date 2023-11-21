@@ -2356,3 +2356,7 @@
 2023-09-27 15:07:56 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
 2023-09-27 15:09:34 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
 2023-09-27 15:09:34 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
+2023-09-30 21:16:50 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2023-09-30 21:16:51 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2023-09-30 21:18:48 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2023-09-30 21:18:48 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
