@@ -2360,3 +2360,187 @@
 2023-09-30 21:16:51 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
 2023-09-30 21:18:48 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
 2023-09-30 21:18:48 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-01-12 16:46:25 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-01-12 16:46:26 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 16:46:35 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
+2024-01-12 16:46:35 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 17:04:48 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-01-12 17:04:49 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 19:36:26 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-01-12 19:36:26 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 19:38:01 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
+2024-01-12 19:38:01 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 20:20:38 INFO  PositiveCIPDataProvider:13 - starting to get cipclear data
+2024-01-12 20:20:39 INFO  PositiveCIPDataProvider:31 - exiting the cipclear data provider method
+2024-01-12 20:32:44 INFO  CIPAppInfoDataProvider:13 - starting to get cipappinfo data
+2024-01-12 20:32:44 INFO  CIPAppInfoDataProvider:31 - exiting the cipappinfo data provider method
+2024-01-12 20:39:17 INFO  CIPNotClearDataProvider:13 - starting to get cipclear data
+2024-01-12 20:39:18 INFO  CIPNotClearDataProvider:31 - exiting the cipclear data provider method
+2024-01-12 21:07:16 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-01-12 21:07:17 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 21:10:03 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
+2024-01-12 21:10:03 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 21:17:26 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-01-12 21:17:27 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 21:20:07 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
+2024-01-12 21:20:07 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-12 21:30:45 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-01-12 21:30:45 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-01-12 21:31:56 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-01-12 21:31:56 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-01-12 21:36:31 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-01-12 21:36:32 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-01-12 21:37:33 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-01-12 21:37:33 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-01-12 21:48:23 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-01-12 21:48:23 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-01-12 21:55:16 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-01-12 21:55:16 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-01-12 22:03:34 INFO  NavigationDataProvider:13 - starting to get data
+2024-01-12 22:03:34 INFO  NavigationDataProvider:31 - exiting the navigation data provider method
+2024-01-16 12:22:45 INFO  NavigationDataProvider:13 - starting to get data
+2024-01-16 12:22:45 INFO  NavigationDataProvider:31 - exiting the navigation data provider method
+2024-01-16 12:45:42 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-01-16 12:45:43 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-01-16 12:50:33 INFO  LightStreamDataProvider:13 - starting to get LargeDollar data
+2024-01-16 12:50:33 INFO  LightStreamDataProvider:31 - exiting the Large Dollar data provider method
+2024-01-16 12:54:17 INFO  CreditExtLenAbsentDataProvider:13 - starting to get Credit Ext Lender customer data
+2024-01-16 12:54:17 INFO  CreditExtLenAbsentDataProvider:31 - exiting the Credit Ext Lender data provider method
+2024-01-16 12:54:44 INFO  CreditTerminatedCustomer:13 - starting to get terminated/inactive/deactivated customer data
+2024-01-16 12:54:44 INFO  CreditTerminatedCustomer:31 - exiting the customer terminated/inactive/deactivated data provider method
+2024-01-16 12:59:33 INFO  TerminatedCustomer:13 - starting to get terminated customer data
+2024-01-16 12:59:33 INFO  TerminatedCustomer:31 - exiting the customer termianted data provider method
+2024-01-16 13:01:39 INFO  RedStatesDataProvider:13 - starting to get customer one loan data
+2024-01-16 13:01:39 INFO  RedStatesDataProvider:31 - exiting the customer one loan data provider method
+2024-01-16 13:02:59 INFO  GarnishedCustLoanRejectedDataProvider:13 - starting to get garnished customer loan reject data
+2024-01-16 13:02:59 INFO  GarnishedCustLoanRejectedDataProvider:31 - exiting the garnished customer loan reject data provider method
+2024-01-16 13:03:51 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-01-16 13:03:51 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-16 14:09:58 INFO  TerminatedCustomer:13 - starting to get terminated customer data
+2024-01-16 14:09:58 INFO  TerminatedCustomer:31 - exiting the customer termianted data provider method
+2024-01-16 14:12:06 INFO  RedStatesDataProvider:13 - starting to get customer one loan data
+2024-01-16 14:12:06 INFO  RedStatesDataProvider:31 - exiting the customer one loan data provider method
+2024-01-16 14:13:31 INFO  GarnishedCustLoanRejectedDataProvider:13 - starting to get garnished customer loan reject data
+2024-01-16 14:13:31 INFO  GarnishedCustLoanRejectedDataProvider:31 - exiting the garnished customer loan reject data provider method
+2024-01-16 14:14:24 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-01-16 14:14:24 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-01-16 15:01:39 INFO  NavigationDataProvider:13 - starting to get data
+2024-01-16 15:01:40 INFO  NavigationDataProvider:31 - exiting the navigation data provider method
+2024-01-17 13:53:27 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-01-17 13:53:28 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-01-17 14:36:12 INFO  CustomerLoan2RejectNextDataProvider:13 - starting to get customer one loan data
+2024-01-17 14:36:12 INFO  CustomerLoan2RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-01-17 14:50:44 INFO  CustomerLoan3RejectNextDataProvider:13 - starting to get customer one loan data
+2024-01-17 14:50:44 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-02-25 17:41:28 INFO  NavigationDataProviderProd:13 - starting to get data
+2024-02-25 17:41:29 INFO  NavigationDataProviderProd:31 - exiting the navigation data provider method
+2024-02-26 14:01:19 INFO  NavigationDataProviderProd:13 - starting to get data
+2024-02-26 14:01:20 INFO  NavigationDataProviderProd:31 - exiting the navigation data provider method
+2024-02-26 14:04:51 INFO  NavigationDataProviderProd:13 - starting to get data
+2024-02-26 14:04:51 INFO  NavigationDataProviderProd:31 - exiting the navigation data provider method
+2024-04-01 11:21:09 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-04-01 11:21:10 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-04-01 11:21:15 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-04-01 11:21:15 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-04-01 11:26:04 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-04-01 11:26:05 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-04-01 11:29:27 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-04-01 11:29:27 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-04-01 11:35:16 INFO  NavigationDataProvider:13 - starting to get data
+2024-04-01 11:35:17 INFO  NavigationDataProvider:31 - exiting the navigation data provider method
+2024-04-01 12:12:10 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-04-01 12:12:11 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-04-01 12:14:25 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-04-01 12:14:25 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-04-01 12:19:33 INFO  LightStreamDataProvider:13 - starting to get LargeDollar data
+2024-04-01 12:19:33 INFO  LightStreamDataProvider:31 - exiting the Large Dollar data provider method
+2024-04-01 12:23:21 INFO  CreditExtLenAbsentDataProvider:13 - starting to get Credit Ext Lender customer data
+2024-04-01 12:23:21 INFO  CreditExtLenAbsentDataProvider:31 - exiting the Credit Ext Lender data provider method
+2024-04-01 12:23:49 INFO  CreditTerminatedCustomer:13 - starting to get terminated/inactive/deactivated customer data
+2024-04-01 12:23:49 INFO  CreditTerminatedCustomer:31 - exiting the customer terminated/inactive/deactivated data provider method
+2024-04-01 17:46:36 INFO  TerminatedCustomer:13 - starting to get terminated customer data
+2024-04-01 17:46:36 INFO  TerminatedCustomer:31 - exiting the customer termianted data provider method
+2024-04-01 17:48:59 INFO  RedStatesDataProvider:13 - starting to get customer one loan data
+2024-04-01 17:48:59 INFO  RedStatesDataProvider:31 - exiting the customer one loan data provider method
+2024-04-01 17:50:23 INFO  GarnishedCustLoanRejectedDataProvider:13 - starting to get garnished customer loan reject data
+2024-04-01 17:50:23 INFO  GarnishedCustLoanRejectedDataProvider:31 - exiting the garnished customer loan reject data provider method
+2024-04-01 17:51:29 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-04-01 17:51:29 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-04-01 20:40:36 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-04-01 20:40:36 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-04-01 21:20:54 INFO  TerminatedCustomer:13 - starting to get terminated customer data
+2024-04-01 21:20:54 INFO  TerminatedCustomer:31 - exiting the customer termianted data provider method
+2024-04-01 21:22:54 INFO  RedStatesDataProvider:13 - starting to get customer one loan data
+2024-04-01 21:22:55 INFO  RedStatesDataProvider:31 - exiting the customer one loan data provider method
+2024-04-01 21:24:08 INFO  GarnishedCustLoanRejectedDataProvider:13 - starting to get garnished customer loan reject data
+2024-04-01 21:24:08 INFO  GarnishedCustLoanRejectedDataProvider:31 - exiting the garnished customer loan reject data provider method
+2024-04-01 21:25:03 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-04-01 21:25:03 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-04-02 13:20:29 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-04-02 13:20:29 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-04-02 13:26:34 INFO  LightStreamDataProvider:13 - starting to get LargeDollar data
+2024-04-02 13:26:35 INFO  LightStreamDataProvider:31 - exiting the Large Dollar data provider method
+2024-04-02 13:31:16 INFO  CreditExtLenAbsentDataProvider:13 - starting to get Credit Ext Lender customer data
+2024-04-02 13:31:17 INFO  CreditExtLenAbsentDataProvider:31 - exiting the Credit Ext Lender data provider method
+2024-04-02 13:31:47 INFO  CreditTerminatedCustomer:13 - starting to get terminated/inactive/deactivated customer data
+2024-04-02 13:31:47 INFO  CreditTerminatedCustomer:31 - exiting the customer terminated/inactive/deactivated data provider method
+2024-04-02 15:52:55 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-04-02 15:52:55 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-04-02 15:54:38 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
+2024-04-02 15:54:38 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
+2024-04-03 14:12:28 INFO  PositiveCIPDataProvider:13 - starting to get cipclear data
+2024-04-03 14:12:28 INFO  PositiveCIPDataProvider:31 - exiting the cipclear data provider method
+2024-04-03 14:18:00 INFO  CIPAppInfoDataProvider:13 - starting to get cipappinfo data
+2024-04-03 14:18:00 INFO  CIPAppInfoDataProvider:31 - exiting the cipappinfo data provider method
+2024-04-03 14:19:08 INFO  CIPNotClearDataProvider:13 - starting to get cipclear data
+2024-04-03 14:19:08 INFO  CIPNotClearDataProvider:31 - exiting the cipclear data provider method
+2024-04-03 16:16:03 INFO  PositiveCIPDataProvider:13 - starting to get cipclear data
+2024-04-03 16:16:04 INFO  PositiveCIPDataProvider:31 - exiting the cipclear data provider method
+2024-04-03 16:21:36 INFO  CIPAppInfoDataProvider:13 - starting to get cipappinfo data
+2024-04-03 16:21:36 INFO  CIPAppInfoDataProvider:31 - exiting the cipappinfo data provider method
+2024-04-03 16:22:49 INFO  CIPNotClearDataProvider:13 - starting to get cipclear data
+2024-04-03 16:22:49 INFO  CIPNotClearDataProvider:31 - exiting the cipclear data provider method
+2024-04-03 16:37:11 INFO  PositiveCIPDataProvider:13 - starting to get cipclear data
+2024-04-03 16:37:12 INFO  PositiveCIPDataProvider:31 - exiting the cipclear data provider method
+2024-04-03 16:45:14 INFO  CIPAppInfoDataProvider:13 - starting to get cipappinfo data
+2024-04-03 16:45:14 INFO  CIPAppInfoDataProvider:31 - exiting the cipappinfo data provider method
+2024-04-03 16:48:46 INFO  CIPNotClearDataProvider:13 - starting to get cipclear data
+2024-04-03 16:48:46 INFO  CIPNotClearDataProvider:31 - exiting the cipclear data provider method
+2024-04-03 16:58:21 INFO  PositiveCIPDataProvider:13 - starting to get cipclear data
+2024-04-03 16:58:21 INFO  PositiveCIPDataProvider:31 - exiting the cipclear data provider method
+2024-04-03 17:05:53 INFO  CIPAppInfoDataProvider:13 - starting to get cipappinfo data
+2024-04-03 17:05:53 INFO  CIPAppInfoDataProvider:31 - exiting the cipappinfo data provider method
+2024-04-03 17:09:01 INFO  CIPNotClearDataProvider:13 - starting to get cipclear data
+2024-04-03 17:09:01 INFO  CIPNotClearDataProvider:31 - exiting the cipclear data provider method
+2024-04-04 17:26:20 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 17:26:21 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 17:42:33 INFO  CustomerLoan2RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 17:42:33 INFO  CustomerLoan2RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 17:49:14 INFO  CustomerLoan3RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 17:49:14 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 19:34:35 INFO  PayOffLoanDataProvider:13 - starting to get payoff loan data
+2024-04-04 19:34:35 INFO  PayOffLoanDataProvider:31 - exiting the payoff loan data provider method
+2024-04-04 19:44:29 INFO  PayOffLoanDataProvider:13 - starting to get payoff loan data
+2024-04-04 19:44:30 INFO  PayOffLoanDataProvider:31 - exiting the payoff loan data provider method
+2024-04-04 19:50:34 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 19:50:34 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 20:15:16 INFO  CustomerLoan2RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 20:15:16 INFO  CustomerLoan2RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 20:21:49 INFO  CustomerLoan3RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 20:21:49 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 20:49:49 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 20:49:50 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 21:44:22 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 21:44:23 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 22:15:42 INFO  CustomerLoan2RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 22:15:42 INFO  CustomerLoan2RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-04 22:28:02 INFO  CustomerLoan3RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-04 22:28:02 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-05 11:29:32 INFO  PayOffLoanDataProvider:13 - starting to get payoff loan data
+2024-04-05 11:29:32 INFO  PayOffLoanDataProvider:31 - exiting the payoff loan data provider method
+2024-04-05 11:48:57 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-05 11:48:57 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-05 12:13:09 INFO  CustomerLoan2RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-05 12:13:09 INFO  CustomerLoan2RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-04-05 12:22:17 INFO  CustomerLoan3RejectNextDataProvider:13 - starting to get customer one loan data
+2024-04-05 12:22:17 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method

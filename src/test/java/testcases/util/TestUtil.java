@@ -583,7 +583,7 @@ public static AppInfoPageObject loanCompleteAndAppinfo(String loanoption, String
 					lp.selectPayoffDate();	
 					Thread.sleep(5000);
 					lp.clickPayOff();
-					Thread.sleep(4000);
+					Thread.sleep(7000);
 				}	
 				String outputMessage=lp.getPayOffResult();		
 				//Loan# 5000042141 is Paid Off
