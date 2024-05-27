@@ -13,6 +13,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -274,14 +276,30 @@ public class TestUtil {
 		if (browserType.equalsIgnoreCase("firefox"))
 		{
 			
-			Runtime.getRuntime().exec(exe1path);	
+			String pathToAIExe = System.getProperty("user.dir") + exe1path;
+		    for (int i = 0; i <= 100; i++) {
+		        String uploadFilePath = System.getProperty("user.dir") + filepath;
+		        ProcessBuilder pb = new ProcessBuilder(pathToAIExe, uploadFilePath);
+		        pb.start();
+		    }
+			 	
 		}else if(browserType.equalsIgnoreCase("internetexplorer"))
 		{
-			//Runtime.getRuntime().exec(exe2path+" "+filepath);	//currently not running using ie--same var used for chrome		
+			String pathToAIExe = System.getProperty("user.dir") + exe2path;
+		    for (int i = 0; i <= 100; i++) {
+		        String uploadFilePath = System.getProperty("user.dir") + filepath;
+		        ProcessBuilder pb = new ProcessBuilder(pathToAIExe, uploadFilePath);
+		        pb.start();
+		    }	//currently not running using ie--same var used for chrome		
 		}
 		else
 		{
-			Runtime.getRuntime().exec(exe2path+" "+filepath);	
+			String pathToAIExe = System.getProperty("user.dir") + exe2path;
+		    for (int i = 0; i <= 100; i++) {
+		        String uploadFilePath = System.getProperty("user.dir") + filepath;
+		        ProcessBuilder pb = new ProcessBuilder(pathToAIExe, uploadFilePath);
+		        pb.start();
+		    }	//currently not running using ie--same var used for chrome	
 			System.out.println("Chrome"+exe2path);
 		}	
 		Reporter.log("File "+ filepath +" is uploaded.");
@@ -354,17 +372,25 @@ public class TestUtil {
 		  lb.setBrowser(ai.getBrowser()); 
 		  if(lb.VerifyLoanOptionsPage()==true)
 		  {
+			  		//Choose loan page
 				  lb.chkLoanoptionChkBoxAny(loanoption);
 				  lb.clkContinueORNextButton();	
+				  
+				   //If ECIP page appears then 
+				  lb.chkEthnicRaceChkBox();
+				  
+				  //Bank Account page
 				  Thread.sleep(1000);
 				  lb.enterRoutingNumber(routno);
 				  Thread.sleep(1000);
 				  lb.enterAccntNumber(acctno1);	
 				  Thread.sleep(1000);
 				  lb.SelAccnType(AcnTy);				  
-				  lb.clkContinueORNextButton();		
+				  lb.clkContinueORNextButton();	
+				  //Loan agreement page
 				  lb.signLoan(ename);
-				  lb.clkContinueORNextButton();				 
+				  lb.clkContinueORNextButton();	
+				  //Auth page
 				  lb.signLoan(ename);
 				  lb.clkContinueORNextButton();
 				  String loanNum=lb.getLoanNumber2();

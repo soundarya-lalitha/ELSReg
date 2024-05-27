@@ -20,15 +20,40 @@ public class LoanConfirmationPageObject extends MasterPageObject {
 	 */	
 		
 		public void chkLoanoptionChkBox()  {
-			//WebElement myDynamicElement = (new WebDriverWait(browser, 40)).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(prop.getProperty("thousandLoanChkBox"))));
-			//if (loanoption=="1000"){ 
-			//Thread.sleep(2000);
+			
 				WebElement loanChkBox=browser.findElement(By.cssSelector(prop.getProperty("thousandLoanChkBox")));
-			
-			
 				loanChkBox.click();       
-		   // }
-		}	
+		   
+		}
+		
+		public void chkEthnicRaceChkBox()  {
+			
+			//boolean existflag=browser.findElement(By.cssSelector(prop.getProperty("hispanicChkBox"))).isDisplayed();
+			boolean existflag=this.chkElementExists(By.cssSelector(prop.getProperty("hispanicChkBox")));
+			System.out.println("existfalg is "+existflag);
+			if (existflag==true)
+			{ 
+				WebElement hispanChkBox=browser.findElement(By.cssSelector(prop.getProperty("hispanicChkBox")));
+				hispanChkBox.click();
+				Reporter.log("ECIP page displayed and selected hispanic check box");
+				
+				WebElement amerIndChkBox=browser.findElement(By.cssSelector(prop.getProperty("ameriIndChkBox")));
+				amerIndChkBox.click();
+				Reporter.log("selected American Indian check box");
+				
+				clkButtonwithJS(By.cssSelector(prop.getProperty("finish")));
+				
+				
+				
+			}
+			else
+			{
+				Reporter.log("ECIP page not displayed.");
+			}
+	}
+		
+				
+		
 		public void enterRoutingNumber(String routno) {
 			this.waitFor(By.cssSelector(prop.getProperty("routingnumber")), 60);			
 			WebElement routingTextBox=browser.findElement(By.cssSelector(prop.getProperty("routingnumber")));

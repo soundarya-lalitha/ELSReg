@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -10,13 +10,13 @@
 <plugin> 
 <groupId>org.apache.maven.plugins</groupId> 
 <artifactId>maven-compiler-plugin</artifactId> 
-<!--java8 
+java8 
 <version>3.8.0</version> 
 <configuration> 
 <source>1.8</source>
-<target>1.8</target> -->
+<target>1.8</target> 
 
-<!--java11 -->
+java11 
 <version>3.11.0</version> 
 <configuration> 
 <source>11</source>
@@ -37,7 +37,7 @@
 <name>usedefaultlisteners</name>
 <value>false</value>
 </property>
-<!-- Setting ReportNG listeners --> 
+ Setting ReportNG listeners  
 <property> <name>listener</name>   
 <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value> 
 </property> 
@@ -81,7 +81,7 @@
       <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- Core selenium jars -->
+     Core selenium jars 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -94,7 +94,7 @@
     <version>3.141.59</version>
 </dependency>
 
-        <!-- Firefox driver jar -->
+         Firefox driver jar 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
@@ -107,22 +107,22 @@
         <version>2.44.0</version>
    		 </dependency> 
 
-        <!-- Selenium IE driver -->
+         Selenium IE driver 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-ie-driver</artifactId>
             <version>3.141.59</version>
         </dependency>
 
-        <!-- Selenium Chrome driver -->
+         Selenium Chrome driver 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
-           <!--  <version>3.141.59</version> -->
+             <version>3.141.59</version> 
              <version>3.141.59</version>
         </dependency>
 
-        <!-- TestNG dependency configuration -->
+         TestNG dependency configuration 
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -130,21 +130,21 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- XML apis -->
+         XML apis 
         <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
             <version>2.0.2</version>
         </dependency>
 
-        <!-- My SQL java connector -->
+         My SQL java connector 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.22</version>
         </dependency>
 
-        <!-- POI for excel -->
+         POI for excel 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -158,14 +158,14 @@
             <type>jar</type>
         </dependency>
 
-        <!-- DOM api -->
+         DOM api 
         <dependency>
             <groupId>org.axsl.org.w3c.dom.svg</groupId>
             <artifactId>svg-dom-java</artifactId>
             <version>1.1</version>
         </dependency>
         
-        <!--Log4j -->
+        Log4j 
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -218,3 +218,4 @@
       </dependencies>
   
 </project>
+-->

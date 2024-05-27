@@ -15,9 +15,9 @@
 				<version>3.12.1</version> 
 					<configuration> 
 						
-						
-						<source>17</source>
-						<target>17</target>  
+						<release>20</release>
+						<source>20</source>
+						<target>20</target>  
 						
 					</configuration> 
  	
@@ -41,10 +41,11 @@
 
 <groupId>org.apache.maven.plugins</groupId> 
 <artifactId>maven-surefire-plugin</artifactId> 
-<version>3.0.0-M5</version> 
+<version>3.2.5</version> 
 		<configuration> 
-				<arguements> <argument>${env}</argument> 
-				</arguements> 
+			<!--<arguements> 
+					<argument>${env}</argument> 
+				</arguements>  -->
 						<properties> 
 							<property>
 								<name>usedefaultlisteners</name>
