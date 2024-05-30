@@ -2598,3 +2598,25 @@
 2024-05-30 11:17:00 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
 2024-05-30 11:20:49 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
 2024-05-30 11:20:49 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-05-30 11:23:45 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-05-30 11:23:46 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-05-30 11:54:42 INFO  LightStreamDataProvider:13 - starting to get LargeDollar data
+2024-05-30 11:54:42 INFO  LightStreamDataProvider:31 - exiting the Large Dollar data provider method
+2024-05-30 12:10:41 INFO  CreditExtLenAbsentDataProvider:13 - starting to get Credit Ext Lender customer data
+2024-05-30 12:10:41 INFO  CreditExtLenAbsentDataProvider:31 - exiting the Credit Ext Lender data provider method
+2024-05-30 12:15:43 INFO  CreditTerminatedCustomer:13 - starting to get terminated/inactive/deactivated customer data
+2024-05-30 12:15:43 INFO  CreditTerminatedCustomer:31 - exiting the customer terminated/inactive/deactivated data provider method
+2024-05-30 12:34:55 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-05-30 12:34:56 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-05-30 16:39:46 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-05-30 16:39:47 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-05-30 16:50:09 INFO  LightStreamDataProvider:13 - starting to get LargeDollar data
+2024-05-30 16:50:10 INFO  LightStreamDataProvider:31 - exiting the Large Dollar data provider method
+2024-05-30 16:54:14 INFO  CreditExtLenAbsentDataProvider:13 - starting to get Credit Ext Lender customer data
+2024-05-30 16:54:14 INFO  CreditExtLenAbsentDataProvider:31 - exiting the Credit Ext Lender data provider method
+2024-05-30 16:54:44 INFO  CreditTerminatedCustomer:13 - starting to get terminated/inactive/deactivated customer data
+2024-05-30 16:54:44 INFO  CreditTerminatedCustomer:31 - exiting the customer terminated/inactive/deactivated data provider method
+2024-05-30 16:56:27 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-05-30 16:56:27 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-05-30 17:02:56 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
+2024-05-30 17:02:56 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
