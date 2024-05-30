@@ -2592,3 +2592,9 @@
 2024-05-08 12:14:47 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
 2024-05-08 22:00:48 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
 2024-05-08 22:00:48 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-05-30 11:16:27 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-05-30 11:16:27 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-05-30 11:17:00 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-05-30 11:17:00 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-05-30 11:20:49 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-05-30 11:20:49 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
