@@ -12,7 +12,7 @@
 		 
 		<classes>  
 				
-				<class name="regloanscripts.AdminNavigations"> </class> 
+				<class name="regloanscripts.AdminNavigationsProd"> </class>	
 				
 				
 				 

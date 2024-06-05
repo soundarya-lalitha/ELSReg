@@ -2620,3 +2620,17 @@
 2024-05-30 16:56:27 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
 2024-05-30 17:02:56 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
 2024-05-30 17:02:56 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method
+2024-06-03 21:38:57 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-06-03 21:38:58 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-06-03 21:38:58 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-06-03 21:38:58 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-06-03 21:38:59 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-06-03 21:38:59 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-06-03 21:39:08 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-06-03 21:39:08 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-06-03 21:40:53 INFO  NavigationDataProviderProd:13 - starting to get data
+2024-06-03 21:40:54 INFO  NavigationDataProviderProd:31 - exiting the navigation data provider method
+2024-06-05 11:21:17 INFO  NavigationDataProviderProd:13 - starting to get data
+2024-06-05 11:21:17 INFO  NavigationDataProviderProd:31 - exiting the navigation data provider method
+2024-06-05 11:55:15 INFO  NavigationDataProvider:13 - starting to get data
+2024-06-05 11:55:15 INFO  NavigationDataProvider:31 - exiting the navigation data provider method

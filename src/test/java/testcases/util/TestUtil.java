@@ -24,6 +24,7 @@ import pageobjects.AppInfoPageObject;
 import pageobjects.CIPAdminPageObject;
 import pageobjects.CreateCustomerPageObject;
 import pageobjects.ELSLoginPageObject;
+import pageobjects.ProdLoginPageObject;
 import pageobjects.LoanConfirmationPageObject;
 import pageobjects.LoanPayOffPageObject;
 import pageobjects.ReviewDisclosurePageObject;
@@ -259,8 +260,20 @@ public class TestUtil {
 			boolean login=lpo.chkLoginSuccess();
 			return login;		
 			
+		}
+		
+public static boolean elsloginAdminProd(String adminemail, String password, ProdLoginPageObject lpo) throws InterruptedException {
 			
-		}	
+			lpo.enterAdminEmail(adminemail);
+			lpo.clickContinueHomeAdmin();			
+			Thread.sleep(3000);
+			lpo.chkConfirmAdmin();
+			lpo.enterpwdAdmin(password);
+			lpo.clickloginButtonAdmin();
+			boolean login=lpo.chkLoginSuccess();
+			return login;		
+			
+		}
 	
 	/*public static CustomerLinkPageObject clickreqnewloan(ELSLoginPageObject lpo) throws Exception, InterruptedException {
 		CustomerLinkPageObject clpo = new CustomerLinkPageObject();

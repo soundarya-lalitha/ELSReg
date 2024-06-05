@@ -10,7 +10,7 @@
 		 <!--  /packages-->
 		 
 		<classes>		
-			<class name="regLoansNewUI.CreditFlowExtLendFinMarket"> </class>		
+			<class name="regloanscripts.AdminNavigationsProd"> </class>		
 				
 		</classes>
 	</test>

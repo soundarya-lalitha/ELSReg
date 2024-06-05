@@ -4,23 +4,24 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import dataproviders.NavigationDataProviderProd;
+
 import pageobjects.NavigationPageObject;
 
-import pageobjects.ELSLoginPageObject;
+import pageobjects.ProdLoginPageObject;
 import testcases.util.TestUtil;
 
 //this is test
 
-public class AdminNavigations {
-		
+public class AdminNavigationsProd {
+	
 	@Test(dataProvider="navigate",dataProviderClass=NavigationDataProviderProd.class)  
 	
 	public void NavigationCheck(String email,String password,String path,String userType,String browserType) throws Exception
 	{
 		 //buffer to hold your errors 
 		 StringBuffer errorBuffer = new StringBuffer();   
-		 ELSLoginPageObject lpo=new ELSLoginPageObject(browserType,userType);
-			TestUtil.elsloginAdmin(email, password, lpo);			
+		 ProdLoginPageObject lpo=new ProdLoginPageObject(browserType,userType);
+			TestUtil.elsloginAdminProd(email, password, lpo);			
 			Thread.sleep(1000);			
 			NavigationPageObject npo=new NavigationPageObject();
 			npo.setBrowser(lpo.getBrowser());
@@ -57,31 +58,5 @@ public class AdminNavigations {
 }
 	
 	
-
-/*@Test
-public void verifyTest(){  
-
-     buffer to hold your errors 
-    StringBuffer errorBuffer = new StringBuffer();      
-
-     verification 1 
-    try{        
-        Assert.assertEquals("value1", "value!");            
-    }catch(AssertionError e){           
-        errorBuffer.append(e.getMessage() + "\n");      
-    }       
-
-     verification 2 
-    try{            
-        Assert.assertEquals("value2", "value!");            
-    }catch(AssertionError e){           
-        errorBuffer.append(e.getMessage());     
-    }
-
-    if(errorBuffer.length() > 0){
-        throw new AssertionError(errorBuffer.toString()); 
-    }
-
-}*/
 
 
