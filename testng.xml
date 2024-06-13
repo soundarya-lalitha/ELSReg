@@ -7,7 +7,9 @@
 		 </listeners>
 	
 		<suite-files>
-			
+			<suite-file  path="./RegNewCreditFlows.xml"> </suite-file>
+			<suite-file path="./RegressionVerifyEmployment.xml"> </suite-file>	
+			<suite-file path="./RegNewUILoanReject.xml"> </suite-file>	
 			<suite-file path="./RegNewUILoans.xml"> </suite-file>
 		</suite-files>
 		
