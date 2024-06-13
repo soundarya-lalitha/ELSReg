@@ -162,9 +162,10 @@ public boolean  verifyAppinfoNavigation() {
 public void enableAdd() throws InterruptedException {
 	
 	this.waitFor(By.cssSelector(prop.getProperty("empenableaddress")), 100);	
+	Thread.sleep(2000);
 	//this.clkButtonwithJS(by);
-	WebElement enableAddIcon=browser.findElement(By.cssSelector(prop.getProperty("empenableaddress")));
-	enableAddIcon.click();	
+	//WebElement enableAddIcon=browser.findElement(By.cssSelector(prop.getProperty("empenableaddress")));
+	this.clkButtonwithJS(By.cssSelector(prop.getProperty("empenableaddress")));	
 		/*
 		 * code to perform click with Action class if image button in case not clickable
 		 * WebElement searchTextBox=browser.findElement(By.cssSelector(prop.getProperty("addSearchtxt")));
@@ -172,7 +173,7 @@ public void enableAdd() throws InterruptedException {
 		 *  Actions act = new Actions(browser); act.sendKeys(Keys.TAB).build().perform();
 		 * act.sendKeys(Keys.ENTER).build().perform();
 		 */
-	Thread.sleep(1000);
+	Thread.sleep(2000);
 	WebElement enableAddlnk=browser.findElement(By.cssSelector(prop.getProperty("enaleaddlnk")));
 	enableAddlnk.click();
 	}

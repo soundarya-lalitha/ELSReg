@@ -401,9 +401,11 @@ public static boolean elsloginAdminProd(String adminemail, String password, Prod
 				  lb.SelAccnType(AcnTy);				  
 				  lb.clkContinueORNextButton();	
 				  //Loan agreement page
+				  Thread.sleep(2000);
 				  lb.signLoan(ename);
 				  lb.clkContinueORNextButton();	
 				  //Auth page
+				  Thread.sleep(2000);
 				  lb.signLoan(ename);
 				  lb.clkContinueORNextButton();
 				  String loanNum=lb.getLoanNumber2();

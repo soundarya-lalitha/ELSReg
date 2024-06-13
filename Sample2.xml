@@ -1,23 +1,25 @@
-	<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="RegressionTest">
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="RegLoans">
 <listeners>
       <listener class-name="org.uncommons.reportng.HTMLReporter"/>
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-	<test name="Regression" preserve-order="true">
+	<test name="RegLoansCycle1" preserve-order="true">
 		<!--  packages-->
 		 <!--  /packages-->
-		<classes> 				
+		<classes> 			
 				
+				<class name="regLoansNewUI.OneLoanTests"> </class> 
 				
-				
-				<class name="regloanscripts.AdminNavigationsTest"> </class> 
-						 
+					
 		</classes>
 		
 	</test>
 </suite>
+
 
 
 
