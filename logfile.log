@@ -2677,3 +2677,5 @@
 2024-06-11 20:58:12 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method
 2024-06-11 21:31:15 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
 2024-06-11 21:31:16 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-06-14 15:59:32 INFO  PayOffLoanDataProvider:13 - starting to get payoff loan data
+2024-06-14 15:59:33 INFO  PayOffLoanDataProvider:31 - exiting the payoff loan data provider method
