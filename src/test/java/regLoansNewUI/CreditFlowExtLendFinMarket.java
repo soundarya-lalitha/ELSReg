@@ -14,7 +14,7 @@ import testcases.util.TestUtil;
 public class CreditFlowExtLendFinMarket
 {
 					
-		@Test(dataProvider="FinMkt",dataProviderClass=FinMktDataProvider.class)  
+		@Test(dataProvider="FinMkt",dataProviderClass=FinMktDataProvider.class,groups= {"Regression"})  
 				
 		public void CreditFinMarketFlow(String email,String password,String extLender,String SelfAsses,String expectedurl,String userType,String browserType) throws Exception
 		{		

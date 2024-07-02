@@ -11,7 +11,7 @@ import testcases.util.TestUtil;
 
 public class Verify_Employment {
 	
-	@Test(dataProvider="customerreject",dataProviderClass=CustomerRejectDataProvider.class)
+	@Test(dataProvider="customerreject",dataProviderClass=CustomerRejectDataProvider.class,groups= {"Regression"})
 	public void verifyEmployment(String lastname,String zip,String dob, String userType,String browserType) throws Exception
 	{
 		//login to the ELS application and click on Start Application

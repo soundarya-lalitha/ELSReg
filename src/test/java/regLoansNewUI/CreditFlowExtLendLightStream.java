@@ -14,7 +14,7 @@ import testcases.util.TestUtil;
 public class CreditFlowExtLendLightStream 
 {
 					
-		@Test(dataProvider="Light",dataProviderClass=LightStreamDataProvider.class)  
+		@Test(dataProvider="Light",dataProviderClass=LightStreamDataProvider.class,groups= {"Regression"})  
 				
 		public void CreditFlowLightStream(String email,String password,String extLender,String SelfAsses,String loanoption,String expectedurl,String userType,String browserType) throws Exception
 		{		

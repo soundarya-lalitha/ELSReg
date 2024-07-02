@@ -14,7 +14,7 @@ import testcases.util.TestUtil;
 
 public class NoCreditNavigations {
 		
-	@Test(dataProvider="customernavigation",dataProviderClass=CustNavigationDataProvider.class)  
+	@Test(dataProvider="customernavigation",dataProviderClass=CustNavigationDataProvider.class,groups= {"Sanity"})  
 	
 	public void NoCreditNavigate(String email,String password,String path,String userType,String browserType) throws Exception
 	{

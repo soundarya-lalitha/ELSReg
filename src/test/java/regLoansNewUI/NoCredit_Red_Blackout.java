@@ -11,7 +11,7 @@ public class NoCredit_Red_Blackout {
 	String Message;	
 	boolean b,c;
 	
-	@Test(dataProvider="redstates",dataProviderClass=RedStatesDataProvider.class)
+	@Test(dataProvider="redstates",dataProviderClass=RedStatesDataProvider.class,groups= {"Regression"})
 	public void NoCreditRedBlackoutEmpls(String email,String password,String userType,String browserType) throws Exception
 	{
 		ELSLoginPageObject lpo=new ELSLoginPageObject(browserType,userType);

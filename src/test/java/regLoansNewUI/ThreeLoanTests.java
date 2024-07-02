@@ -14,7 +14,7 @@ public class ThreeLoanTests {
 	LoanConfirmationPageObject lc;
 	
 	
-	@Test(dataProvider="customerloan3andreject",dataProviderClass=CustomerLoan3RejectNextDataProvider.class)
+	@Test(dataProvider="customerloan3andreject",dataProviderClass=CustomerLoan3RejectNextDataProvider.class,groups= {"Regression"})
 	public void customer3Loan_Reject_Other(String email,String password,String ssnvalue,String homephonevalue,String wrkemail,String lastname,String zip,String dob,String question1,String question2,String loanoption1,String loanoption2,String loanoption3,String routno,String acctno1,String AcnType,String ename,String add,String city,String state,String workstate,String expectedmessage,String userType, String browserType) throws Exception
 	{
 	//login to the ELS application and click on Start Application

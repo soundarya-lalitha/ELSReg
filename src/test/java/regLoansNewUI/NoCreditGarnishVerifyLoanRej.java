@@ -13,7 +13,7 @@ import testcases.util.TestUtil;
 
 public class NoCreditGarnishVerifyLoanRej {
 	
-	@Test(dataProvider="garnishedCustomer",dataProviderClass=GarnishedCustLoanRejectedDataProvider.class)
+	@Test(dataProvider="garnishedCustomer",dataProviderClass=GarnishedCustLoanRejectedDataProvider.class,groups= {"Regression"})
 	public void verifyGarnishment(String email,String password,String ssnvalue,String homephonevalue,String wrkemail,String add,String city,String state,String workstate,String expectedmessage,String userType,String browserType) throws Exception
 	{
 		

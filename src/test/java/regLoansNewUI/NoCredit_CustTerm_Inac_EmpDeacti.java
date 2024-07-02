@@ -11,7 +11,7 @@ public class NoCredit_CustTerm_Inac_EmpDeacti {
 	String Message;	
 	boolean b,c;
 	
-	@Test(dataProvider="terminate",dataProviderClass=TerminatedCustomer.class)
+	@Test(dataProvider="terminate",dataProviderClass=TerminatedCustomer.class,groups= {"Regression"})
 	public void NoCreditInvalidEmployees(String email,String password,String userType,String browserType) throws Exception
 	{
 		ELSLoginPageObject lpo=new ELSLoginPageObject(browserType,userType);

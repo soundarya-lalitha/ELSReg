@@ -13,7 +13,7 @@ import testcases.util.TestUtil;
 
 public class AdminNavigationsTest {
 		
-	@Test(dataProvider="navigate",dataProviderClass=NavigationDataProvider.class)  
+	@Test(dataProvider="navigate",dataProviderClass=NavigationDataProvider.class,groups= {"Sanity"})  
 	
 	public void NavigationCheck(String email,String password,String path,String userType,String browserType) throws Exception
 	{

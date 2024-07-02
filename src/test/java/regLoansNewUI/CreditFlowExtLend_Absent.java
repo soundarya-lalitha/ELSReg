@@ -11,7 +11,7 @@ public class CreditFlowExtLend_Absent {
 	String Message,cls;	
 	boolean b,c;
 	
-	@Test(dataProvider="ext",dataProviderClass=CreditExtLenAbsentDataProvider.class)
+	@Test(dataProvider="ext",dataProviderClass=CreditExtLenAbsentDataProvider.class,groups= {"Regression"})
 	public void CreditInvalidEmployees(String email,String password,String userType,String browserType) throws Exception
 	{
 		ELSLoginPageObject lpo=new ELSLoginPageObject(browserType,userType);

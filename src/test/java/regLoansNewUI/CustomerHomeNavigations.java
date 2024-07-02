@@ -22,7 +22,7 @@ public class CustomerHomeNavigations {
 	 * @param browserType
 	 * @throws Exception
 	 */
-	@Test(dataProvider="customernavigation",dataProviderClass=CustNavigationDataProvider.class)  
+	@Test(dataProvider="customernavigation",dataProviderClass=CustNavigationDataProvider.class,groups= {"Sanity"})  
 	
 	public void NavigateCustomerHome(String email,String password,String FinCouselurl,String userType,String browserType) throws Exception
 	{

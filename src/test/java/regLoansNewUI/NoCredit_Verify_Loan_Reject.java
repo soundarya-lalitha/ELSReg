@@ -15,7 +15,7 @@ public class NoCredit_Verify_Loan_Reject
 	LoanConfirmationPageObject lc;
 	
 	
-	@Test(dataProvider="customerloanreject",dataProviderClass=CustomerRejectLoanDataProvider.class)
+	@Test(dataProvider="customerloanreject",dataProviderClass=CustomerRejectLoanDataProvider.class,groups= {"Regression"})
 	public void customer_Loan_Reject(String email,String password,String ssnvalue,String homephonevalue,String wrkemail, String lastname,String zip,String dob,String question1,String question2,String add,String city,String state,String workstate,String expectedmessage,String userType,String browserType) throws Exception
 	{
 	//login to the ELS application and click on Start Application

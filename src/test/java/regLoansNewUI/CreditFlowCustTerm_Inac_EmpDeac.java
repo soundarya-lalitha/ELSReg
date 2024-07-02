@@ -11,7 +11,7 @@ public class CreditFlowCustTerm_Inac_EmpDeac {
 	String Message;	
 	boolean b,c;
 	
-	@Test(dataProvider="creditterminate",dataProviderClass=CreditTerminatedCustomer.class)
+	@Test(dataProvider="creditterminate",dataProviderClass=CreditTerminatedCustomer.class,groups= {"Regression"})
 	public void CreditInvalidEmployees(String email,String password,String userType,String browserType) throws Exception
 	{
 		ELSLoginPageObject lpo=new ELSLoginPageObject(browserType,userType);
