@@ -35,11 +35,15 @@ public class LoanConfirmationPageObject extends MasterPageObject {
 			{ 
 				WebElement hispanChkBox=browser.findElement(By.cssSelector(prop.getProperty("hispanicChkBox")));
 				hispanChkBox.click();
-				Reporter.log("ECIP page displayed and selected hispanic check box");
+				Reporter.log("ECIP page displayed and selected hispanic check box for Etchnicity");
 				
 				WebElement amerIndChkBox=browser.findElement(By.cssSelector(prop.getProperty("ameriIndChkBox")));
 				amerIndChkBox.click();
-				Reporter.log("selected American Indian check box");
+				Reporter.log("selected American Indian check box for Race");
+				
+				WebElement idonotwishChkBox=browser.findElement(By.cssSelector(prop.getProperty("idonotwishChkBox")));
+				idonotwishChkBox.click();
+				Reporter.log("selected I do not wish check box for Language Preference");
 				
 				clkButtonwithJS(By.cssSelector(prop.getProperty("finish")));
 				

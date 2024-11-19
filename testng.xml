@@ -4,16 +4,16 @@
 
 		<groups>
 			<run>
-				<include name="Sanity" />
+				<include name="Regression" />
 			</run>
 		</groups>
 		 
 		 <suite-files>
 			<suite-file  path="./RegSanity.xml"> </suite-file>
-			<suite-file  path="./RegNewCreditFlows.xml"> </suite-file>
-			<suite-file path="./RegressionVerifyEmployment.xml"> </suite-file>	
-			<suite-file path="./RegNewUILoanReject.xml"> </suite-file>	
-			<suite-file path="./RegNewUILoans.xml"> </suite-file>
+			<!-- <suite-file  path="./RegNewCreditFlows.xml"> </suite-file> -->
+			<!-- <suite-file path="./RegressionVerifyEmployment.xml"> </suite-file>	-->
+			<!-- <suite-file path="./RegNewUILoanReject.xml"> </suite-file>	-->
+			<!--    <suite-file path="./RegNewUILoans.xml"> </suite-file>   -->
 		</suite-files>
 		 
 	
