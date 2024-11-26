@@ -2757,3 +2757,5 @@
 2024-11-22 15:02:55 INFO  CreditTerminatedCustomer:31 - exiting the customer terminated/inactive/deactivated data provider method
 2024-11-22 20:51:16 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
 2024-11-22 20:51:16 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-11-26 17:00:22 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-11-26 17:00:23 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
