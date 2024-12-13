@@ -119,11 +119,11 @@ public class ELSLoginPageObject {
 		
   /**
    * click on log in link
+ * @throws InterruptedException 
    */
-  public void clickLoginLink()  {
-	  		
-	  		//wait.until(ExpectedConditions.elementToBeClickable(By.linkText(prop.getProperty("login"))));
-			WebElement loginhomeLink=browser.findElement(By.linkText(prop.getProperty("login")));
+  public void clickLoginLink() throws InterruptedException  {
+	  
+	 		WebElement loginhomeLink=browser.findElement(By.linkText(prop.getProperty("login")));
 			loginhomeLink.click();
   }
   /**

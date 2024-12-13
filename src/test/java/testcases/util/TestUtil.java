@@ -218,19 +218,20 @@ public class TestUtil {
 	
 	
 		public static boolean  elslogin(String email, String password, ELSLoginPageObject lpo) throws InterruptedException {
-		lpo.clickLoginLink();
-		Thread.sleep(3000);
-		lpo.enterEmail(email);
-		lpo.clickContinueHome();
-		
-		Thread.sleep(3000);
-		lpo.chkConfirm();
-		lpo.enterpwd(password);
-		Thread.sleep(3000);
-		//lpo.clickloginButton();
-		lpo.clickLoginScroll();
-		boolean login=lpo.chkLoginSuccess();
-		return login;
+				
+				lpo.clickLoginLink();
+				Thread.sleep(3000);
+				lpo.enterEmail(email);
+				lpo.clickContinueHome();
+				
+				Thread.sleep(3000);
+				lpo.chkConfirm();
+				lpo.enterpwd(password);
+				Thread.sleep(3000);
+				//lpo.clickloginButton();
+				lpo.clickLoginScroll();
+				boolean login=lpo.chkLoginSuccess();
+				return login;
 	}
 		
 		/****different verison of login, clicking login link using java script*********/
@@ -251,6 +252,7 @@ public class TestUtil {
 		
 		public static boolean  elsloginAdmin(String adminemail, String password, ELSLoginPageObject lpo) throws InterruptedException {
 			
+			Thread.sleep(20000);			
 			lpo.enterAdminEmail(adminemail);
 			lpo.clickContinueHomeAdmin();			
 			Thread.sleep(3000);
