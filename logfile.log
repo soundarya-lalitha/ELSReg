@@ -2925,3 +2925,37 @@
 2024-12-13 09:57:21 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
 2024-12-13 10:29:13 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
 2024-12-13 10:29:14 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 11:15:09 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 11:15:10 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 11:21:34 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 11:21:35 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 11:41:35 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 11:41:35 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 11:58:55 INFO  CustomerLoan2RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 11:58:55 INFO  CustomerLoan2RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 12:10:17 INFO  CustomerLoan3RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 12:10:17 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 14:25:42 INFO  CustomerLoan1RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 14:25:43 INFO  CustomerLoan1RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 14:42:18 INFO  CustomerLoan2RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 14:42:18 INFO  CustomerLoan2RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-13 14:53:46 INFO  CustomerLoan3RejectNextDataProvider:13 - starting to get customer one loan data
+2024-12-13 14:53:46 INFO  CustomerLoan3RejectNextDataProvider:31 - exiting the customer one loan data provider method
+2024-12-17 11:06:25 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-12-17 11:06:26 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-12-17 11:06:52 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-12-17 11:06:52 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-12-17 11:07:57 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-12-17 11:07:57 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-12-17 11:09:27 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-12-17 11:09:27 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-12-17 11:12:17 INFO  NavigationDataProvider:13 - starting to get data
+2024-12-17 11:12:17 INFO  NavigationDataProvider:31 - exiting the navigation data provider method
+2024-12-17 15:31:42 INFO  FinMktDataProvider:13 - starting to get LargeDollar4 data
+2024-12-17 15:31:42 INFO  FinMktDataProvider:31 - exiting the Large Dollar4 data provider method
+2024-12-17 15:32:40 INFO  NavigationDataProvider:13 - starting to get data
+2024-12-17 15:32:40 INFO  NavigationDataProvider:31 - exiting the navigation data provider method
+2024-12-17 15:46:27 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-12-17 15:46:27 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
+2024-12-17 15:46:40 INFO  CustNavigationDataProvider:13 - starting to get customer navigation data
+2024-12-17 15:46:40 INFO  CustNavigationDataProvider:31 - exiting the customer navigation data provider method
