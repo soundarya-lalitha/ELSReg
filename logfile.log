@@ -2979,3 +2979,17 @@
 2024-12-18 11:36:32 INFO  CreditExtLenAbsentDataProvider:31 - exiting the Credit Ext Lender data provider method
 2024-12-18 11:37:32 INFO  CreditTerminatedCustomer:13 - starting to get terminated/inactive/deactivated customer data
 2024-12-18 11:37:32 INFO  CreditTerminatedCustomer:31 - exiting the customer terminated/inactive/deactivated data provider method
+2024-12-18 16:51:02 INFO  TerminatedCustomer:13 - starting to get terminated customer data
+2024-12-18 16:51:03 INFO  TerminatedCustomer:31 - exiting the customer termianted data provider method
+2024-12-18 16:53:05 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-12-18 16:53:05 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-12-18 17:03:54 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-12-18 17:03:55 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-12-18 20:18:13 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-12-18 20:18:14 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-12-18 20:22:05 INFO  CustomerRejectLoanDataProvider:14 - starting to get customer loan reject data
+2024-12-18 20:22:06 INFO  CustomerRejectLoanDataProvider:32 - exiting the customer loan reject data provider method
+2024-12-18 20:26:44 INFO  CustomerRejectDataProvider:13 - starting to get customer loan reject data
+2024-12-18 20:26:44 INFO  CustomerRejectDataProvider:32 - exiting the customer loan reject data provider method
+2024-12-18 20:27:53 INFO  CustomerLess18AgeDataProvider:13 - starting to get customer loan reject data
+2024-12-18 20:27:53 INFO  CustomerLess18AgeDataProvider:32 - exiting the customer loan reject data provider method

@@ -12,7 +12,7 @@
 		 <!--  /packages-->
 		<classes> 			
 				
-				<class name="regLoansNewUI.OneLoanTests"> </class> 
+				<class name="regLoansNewUI.NoCredit_Verify_Loan_Reject"> </class>
 				
 					
 		</classes>
