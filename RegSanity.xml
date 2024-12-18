@@ -5,7 +5,7 @@
       <listener class-name="org.uncommons.reportng.HTMLReporter"/>
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-	<test name="AdminCustomerPortalSanity" preserve-order="true">
+	<test name="AdminCustomerSanity" preserve-order="true">
 		<!--  packages-->
 		 <!--  /packages-->
 		<classes> 

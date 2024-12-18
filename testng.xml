@@ -24,11 +24,7 @@
 		<class name="regLoansNewUI.CreditFlowCustTerm_Inac_EmpDeac"> </class>	
 				 		
 				 		
-				 		<class name="regLoansNewUI.NoCredit_CustTerm_Inac_EmpDeacti"> </class>
-						<class name="regLoansNewUI.NoCredit_Red_Blackout"> </class>
-						<class name="regLoansNewUI.NoCreditGarnishVerifyLoanRej"> </class>
-						<class name="regLoansNewUI.NoCredit_Verify_Loan_Reject"> </class>	
-		
+				 		
 		
 		</classes>
 		
